@@ -1,0 +1,76 @@
+[load] (9800, 104)  2015-01-05 .. 2026-04-15
+[features] route_dummies=4 weather=82 econ=4
+[features] weather cols: ['Route_Mean_air', 'air_South_China_Sea', 'air_Indian_Ocean', 'air_Arabian_Sea', 'air_Red_Sea', 'air_Mediterranean_Sea', 'air_North_Atlantic', 'air_North_Sea', 'Route_Mean_slp', 'slp_South_China_Sea', 'slp_Indian_Ocean', 'slp_Arabian_Sea', 'slp_Red_Sea', 'slp_Mediterranean_Sea', 'slp_North_Atlantic', 'slp_North_Sea', 'Route_Mean_wind_speed', 'wind_speed_South_China_Sea', 'wind_speed_Indian_Ocean', 'wind_speed_Arabian_Sea', 'wind_speed_Red_Sea', 'wind_speed_Mediterranean_Sea', 'wind_speed_North_Atlantic', 'wind_speed_North_Sea', 'cyclone_wind_South_China_Sea', 'cyclone_slp_South_China_Sea', 'cyclone_dist_South_China_Sea', 'cyclone_active_South_China_Sea', 'cyclone_wind_Indian_Ocean', 'cyclone_slp_Indian_Ocean', 'cyclone_dist_Indian_Ocean', 'cyclone_active_Indian_Ocean', 'cyclone_wind_Arabian_Sea', 'cyclone_slp_Arabian_Sea', 'cyclone_dist_Arabian_Sea', 'cyclone_active_Arabian_Sea', 'cyclone_wind_Red_Sea', 'cyclone_slp_Red_Sea', 'cyclone_dist_Red_Sea', 'cyclone_active_Red_Sea', 'cyclone_wind_Mediterranean_Sea', 'cyclone_slp_Mediterranean_Sea', 'cyclone_dist_Mediterranean_Sea', 'cyclone_active_Mediterranean_Sea', 'cyclone_wind_North_Atlantic', 'cyclone_slp_North_Atlantic', 'cyclone_dist_North_Atlantic', 'cyclone_active_North_Atlantic', 'cyclone_wind_North_Sea', 'cyclone_slp_North_Sea', 'cyclone_dist_North_Sea', 'cyclone_active_North_Sea', 'Route_Max_cyclone_wind', 'Route_Min_cyclone_slp', 'Route_Min_cyclone_dist', 'Route_cyclone_active', 'air_North_Pacific_West', 'air_North_Pacific_East', 'slp_North_Pacific_West', 'slp_North_Pacific_East', 'wind_speed_North_Pacific_West', 'wind_speed_North_Pacific_East', 'cyclone_wind_North_Pacific_West', 'cyclone_slp_North_Pacific_West', 'cyclone_dist_North_Pacific_West', 'cyclone_active_North_Pacific_West', 'cyclone_wind_North_Pacific_East', 'cyclone_slp_North_Pacific_East', 'cyclone_dist_North_Pacific_East', 'cyclone_active_North_Pacific_East', 'SWI', 'Coastal_Threat', 'Cyclone_Wind_Lag7d', 'Cyclone_Wind_Lag14d', 'Cyclone_Wind_Lag30d', 'Cyclone_Active_Lag7d', 'Cyclone_Active_Lag14d', 'Cyclone_Active_Lag30d', 'Wind_Speed_Lag7d', 'Wind_Speed_Lag14d', 'Wind_Speed_Lag30d', 'Congestion_Risk']
+[features] banned-but-present: ['Cyclone_Wind_Forecast3d', 'Cyclone_Wind_Forecast7d', 'Cyclone_Active_Forecast3d', 'Wind_Speed_Forecast7d', 'Rolling_7d_Cyclone_Days', 'Price_Volatility_7d', 'Price_Volatility_30d']
+[wf] candidate origins: 76 (2020-01-01 .. 2026-04-01)
+  ...origin 2020-12-01  n_test=80  elapsed 26s
+  ...origin 2021-12-01  n_test=84  elapsed 51s
+  ...origin 2022-12-01  n_test=84  elapsed 80s
+  ...origin 2023-12-01  n_test=76  elapsed 112s
+  ...origin 2024-12-01  n_test=72  elapsed 150s
+  ...origin 2025-12-01  n_test=76  elapsed 182s
+
+[wf] folds used=75 skipped=1  rows scored=92400
+
+================================================================================================
+RANKED AGGREGATE MODEL COMPARISON (mean over expanding-window folds)
+================================================================================================
+            model family  folds  MAE_log  RMSE_log     R2_log       QLIKE                                                                                                                                MAE_vol_pp
+        garch11_t  GARCH     75  0.88776   1.08078   -0.55867     3.38072                                                                                                                                  61.35610
+   garch11_normal  GARCH     75  0.88111   1.07001   -0.54440     4.50701                                                                                                                                  59.75169
+    gjr_garch11_t  GARCH     75  0.94114   1.15402   -2.78888     4.67585                                                                                                                              385315.86556
+    har_wpca_epca    HAR     75  1.00027   1.20429   -1.65286    38.56048                                                                                                                                 514.38088
+har_log_strictlag    HAR     75  0.84600   1.04271   -0.38495    44.19140                                                                                                                                  57.58364
+         har_econ    HAR     75  1.00706   1.20771   -2.75926    47.59689                                                                                                                               15500.44056
+  har_weather_pca    HAR     75  0.89689   1.09594   -0.59371    72.93811                                                                                                                                  75.57349
+          har_log    HAR     75  0.85303   1.05047   -0.40379    74.41756                                                                                                                                  57.94243
+            har_j    HAR     75  0.85335   1.05064   -0.40615    74.89930                                                                                                                                  57.96464
+           har_cj    HAR     75  0.85216   1.05526   -0.40799    88.13448                                                                                                                                  57.70020
+          har_ext    HAR     75  0.83514   1.03462   -0.35554   581.04988                                                                                                                                  56.67247
+        har_route    HAR     75  0.84920   1.05685   -0.44011   832.57812                                                                                                                                  57.43805
+       egarch11_t  GARCH     75  7.55461  10.72075 -840.11130 51837.11418 29392031878158779478449415744679833852718724332311749083746979383152487728811867875156740117438170224810033545863198751346558763008.00000
+ har_weather_econ    HAR     75  1.33595   1.58343   -7.72622 61615.14395                                                                                                                            13957802.85908
+      har_weather    HAR     75  1.08473   1.32557   -1.84185 61739.18660                                                                                                                                  74.17277
+
+================================================================================================
+DIEBOLD-MARIANO INCREMENTAL VALUE TESTS (paired; NW HAC lag=9; two-sided t p-value)
+================================================================================================
+                        comparison              loss  n_pairs  mean_loss_baseline  mean_loss_challenger  skill_gain_pct     dm_t    dm_p  significant_5pct
+       HAR+weather (82 raw) vs HAR squared_error_log     6268             1.17059               2.32622       -98.72164 -5.25946 0.00000              True
+       HAR+weather (82 raw) vs HAR             QLIKE     6268            78.02328           62059.01606    -79439.09973 -2.10884 0.03500              True
+        HAR+weather (5 PCs) vs HAR squared_error_log     6268             1.17059               1.34564       -14.95348 -3.34839 0.00082              True
+        HAR+weather (5 PCs) vs HAR             QLIKE     6268            78.02328              75.38113         3.38636  0.29469 0.76824             False
+                   HAR+econ vs HAR squared_error_log     6268             1.17059               2.74796      -134.74941 -3.36200 0.00078              True
+                   HAR+econ vs HAR             QLIKE     6268            78.02328              49.24930        36.87871  1.09085 0.27538             False
+     HAR+weather+econ (raw) vs HAR squared_error_log     6268             1.17059               6.31323      -439.31837 -4.27289 0.00002              True
+     HAR+weather+econ (raw) vs HAR             QLIKE     6268            78.02328           61929.98979    -79273.73080 -2.10442 0.03538              True
+        HAR+weatherPCs+econ vs HAR squared_error_log     6268             1.17059               2.08814       -78.38255 -4.24929 0.00002              True
+        HAR+weatherPCs+econ vs HAR             QLIKE     6268            78.02328              39.70333        49.11348  1.12667 0.25992             False
+    HAR+ext(EWMA,skew,kurt) vs HAR squared_error_log     6268             1.17059               1.13905         2.69433  1.62838 0.10350             False
+    HAR+ext(EWMA,skew,kurt) vs HAR             QLIKE     6268            78.02328             595.68559      -663.47159 -1.39190 0.16400             False
+                      HAR-J vs HAR squared_error_log     6268             1.17059               1.16985         0.06346  0.53379 0.59350             False
+                      HAR-J vs HAR             QLIKE     6268            78.02328              78.53823        -0.65999 -0.87083 0.38388             False
+                     HAR-CJ vs HAR squared_error_log     6268             1.17059               1.18959        -1.62316 -1.52274 0.12787             False
+                     HAR-CJ vs HAR             QLIKE     6268            78.02328              92.29407       -18.29043 -1.69382 0.09035             False
+       HAR per-route vs HAR pooled squared_error_log     6268             1.17059               1.20340        -2.80292 -1.77598 0.07579             False
+       HAR per-route vs HAR pooled             QLIKE     6268            78.02328             871.63667     -1017.14945 -1.23812 0.21572             False
+             HAR strict-lag vs HAR squared_error_log     6268             1.17059               1.14972         1.78336  1.94229 0.05215             False
+             HAR strict-lag vs HAR             QLIKE     6268            78.02328              45.78736        41.31577  0.72667 0.46746             False
+          GARCH(1,1)-normal vs HAR squared_error_log     6268             1.17059               1.23380        -5.39939 -1.75623 0.07910             False
+          GARCH(1,1)-normal vs HAR             QLIKE     6268            78.02328               4.50084        94.23142  1.25248 0.21044             False
+               GARCH(1,1)-t vs HAR squared_error_log     6268             1.17059               1.27418        -8.84881 -2.52326 0.01165              True
+               GARCH(1,1)-t vs HAR             QLIKE     6268            78.02328               3.36387        95.68863  1.27150 0.20360             False
+              EGARCH(1,1)-t vs HAR squared_error_log     4648             1.17485             980.78234    -83381.68306 -5.90167 0.00000              True
+              EGARCH(1,1)-t vs HAR             QLIKE     4648           101.09807           35411.51965    -34926.90053 -1.43995 0.14995             False
+           GJR-GARCH(1,1)-t vs HAR squared_error_log     6268             1.17059               2.40705      -105.62628 -2.89146 0.00385              True
+           GJR-GARCH(1,1)-t vs HAR             QLIKE     6268            78.02328               4.64140        94.05126  1.24993 0.21137             False
+HAR+weather(5 PCs) vs GARCH(1,1)-t squared_error_log     6268             1.27418               1.34564        -5.60840 -1.06989 0.28471             False
+HAR+weather(5 PCs) vs GARCH(1,1)-t             QLIKE     6268             3.36387              75.38113     -2140.90313 -1.38795 0.16520             False
+        HAR vs HAR+weather (5 PCs) squared_error_log     6268             1.34564               1.17059        13.00829  3.34839 0.00082              True
+        HAR vs HAR+weather (5 PCs)             QLIKE     6268            75.38113              78.02328        -3.50506 -0.29469 0.76824             False
+                   HAR vs HAR+econ squared_error_log     6268             2.74796               1.17059        57.40138  3.36200 0.00078              True
+                   HAR vs HAR+econ             QLIKE     6268            49.24930              78.02328       -58.42516 -1.09085 0.27538             False
+       HAR vs HAR+weather (82 raw) squared_error_log     6268             2.32622               1.17059        49.67835  5.25946 0.00000              True
+       HAR vs HAR+weather (82 raw)             QLIKE     6268         62059.01606              78.02328        99.87428  2.10884 0.03500              True
+
+[done] 198s

@@ -1,0 +1,4 @@
+model,n,within_lane_R2
+M0_trail_only,4876,0.12726
+M1_trail+shocks,4876,0.12977
+M3_trail+shocks+continuous,4876,0.16839

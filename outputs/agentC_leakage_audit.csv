@@ -1,0 +1,309 @@
+feature,group,corr_fwd5,spearman_fwd5,corr_fwd1,corr_fwd_abs5,corr_log_rv_fwd,corr_rv_fwd_level,n_valid,n_unique,flag_corr_gt_0.5,flag_corr_fwd1_gt_0.5,flag_near_perfect_target,flag_banned,flag_used_by_pipeline,note
+Price_Lag_30d,price_history,-0.09409568361611913,-0.045478658189308255,-0.0432520868671002,-0.23827765992354635,-0.23405012285182344,-0.26486756414108287,9680.0,2779.0,False,False,False,False,True,
+Price_Lag_7d,price_history,-0.05840379881985069,0.005013482161280029,-0.02370561250404285,-0.2574255490620993,-0.23168848298790395,-0.28065823790549593,9772.0,2803.0,False,False,False,False,True,
+air_North_Pacific_West,weather,0.06978124783020202,0.06201209367916314,0.03421688627835671,0.06304447384071594,0.10618211409578944,0.016785162263013447,4000.0,2000.0,False,False,False,False,True,
+Week_of_Year,price_history,0.07258260780560034,0.0841295925272574,0.02029510492908959,0.08283248278794915,0.10201585997034562,0.08092881409062454,9800.0,53.0,False,False,False,False,True,
+Month,price_history,0.0655764411284512,0.08167674420550967,0.023011336915970956,0.06339141679112462,0.08942663138726319,0.06108509755765811,9800.0,12.0,False,False,False,False,True,
+air_North_Pacific_East,weather,0.017546765649008554,0.017418928619908042,0.011692656685244685,0.06518406852807598,0.08117658256806029,0.023035600803259688,4000.0,2000.0,False,False,False,False,True,
+slp_Arabian_Sea,weather,-0.012199597050172636,-0.03125890153863299,-0.004187281904816058,0.049472955048764,0.07803622558002811,0.050323584396220214,5516.0,2682.0,False,False,False,False,True,
+slp_Red_Sea,weather,0.0009926644555428303,0.01000688056127445,0.007840775721076226,0.05510134816341741,0.0700222557797587,0.05380050460628067,5516.0,2620.0,False,False,False,False,True,
+wind_speed_Red_Sea,weather,0.01365158666580204,0.025800927121482676,0.014044580696646108,-0.020957078175792208,-0.0663767612457731,-0.02001951353258748,5516.0,2758.0,False,False,False,False,True,
+slp_North_Pacific_West,weather,-0.05753719518159076,-0.051927268679672546,-0.02734634507728881,-0.04376563682865971,-0.06612067140018643,-0.012220663896794682,4000.0,1993.0,False,False,False,False,True,
+slp_North_Pacific_East,weather,0.02219832599834887,0.030989564890833318,0.01039966609635956,-0.03138770919340906,-0.06407073839611319,-0.04524005141127954,4000.0,1991.0,False,False,False,False,True,
+Price_Momentum_30d,price_history,0.020710160795632582,0.16845875180324743,0.019687318943805605,-0.10366112484716358,-0.05772953745312835,-0.09776848295205269,9680.0,4758.0,False,False,False,False,True,
+wind_speed_North_Pacific_West,weather,-0.024895761318446383,-0.02478477220673146,0.008657951213982596,-0.06039460278840866,-0.05533173428117415,-0.0806449356638293,4000.0,2000.0,False,False,False,False,True,
+wind_speed_Indian_Ocean,weather,0.01600815305114472,0.0029503801412379357,0.004226334935069676,-0.035947275354377264,-0.05479321633700623,-0.05120092403767242,5516.0,2758.0,False,False,False,False,True,
+cyclone_wind_Arabian_Sea,weather,0.0682341661854127,-0.03335547962588426,0.03552826370257125,0.09527379246877955,0.04833981347764336,0.08211610660920048,9800.0,21.0,False,False,False,False,True,
+air_Red_Sea,weather,-0.003021101097210458,0.016946341807572457,-0.009377988792878347,-0.03692402925675828,-0.048291246029162224,-0.037090051372222245,5516.0,2758.0,False,False,False,False,True,
+slp_North_Sea,weather,0.005027452579172284,0.0144878073070472,0.00046175331066119026,-0.05970610377297113,-0.0467376635795922,-0.06684304057034522,5516.0,2704.0,False,False,False,False,True,
+air_North_Sea,weather,-0.008630454137131281,0.0033648600632155954,-0.0006688869072116698,-0.027682523188818024,-0.04519258349829955,-0.03729410672536921,5516.0,2758.0,False,False,False,False,True,
+Wind_Speed_Lag30d,weather,-0.11716268768673155,-0.1659272975606496,-0.0388471578841834,-0.07370781872198473,-0.045076850511791,-0.08525662208218839,9516.0,4758.0,False,False,False,False,True,
+cyclone_slp_Arabian_Sea,weather,0.058467465061629094,-0.03359142983618656,0.002268624986880795,0.09464147935384584,0.04431119603362675,0.08176149763341468,9800.0,33.0,False,False,False,False,True,
+Wind_Speed_Lag7d,weather,-0.04945714583477321,-0.06574451425373475,-0.009812030915575622,-0.042750364334523006,-0.04355689024658037,-0.04941611638638665,9516.0,4758.0,False,False,False,False,True,
+wind_speed_North_Pacific_East,weather,-0.047306959681288216,-0.07072247561708672,-0.03837643030047093,-0.013794180064080154,-0.04264590575364165,-0.009011312421050754,4000.0,2000.0,False,False,False,False,True,
+air_North_Atlantic,weather,-0.006829256779181007,0.007651301613400804,0.0027726492269788553,-0.029108602062101255,-0.041412743944712296,-0.04232280430997268,5516.0,2758.0,False,False,False,False,True,
+wind_speed_Arabian_Sea,weather,0.04332105364335706,0.05360983712319671,0.017229449951158195,-0.02370107650614839,-0.040120133750772946,-0.02221780522576781,5516.0,2758.0,False,False,False,False,True,
+Route_Mean_wind_speed,weather,-0.015587293603575995,-0.028308170757763547,-0.012727401678983528,-0.016139416036916016,-0.03992191496471237,-0.02401822662355212,9516.0,4758.0,False,False,False,False,True,
+SWI,weather,-0.015580430912361552,-0.028349216544113216,-0.012675471606167188,-0.01616823832030959,-0.03989630690223825,-0.024129333191334562,9516.0,4758.0,False,False,False,False,True,
+Wind_Speed_Lag14d,weather,-0.11476628771517143,-0.14616766235051296,-0.04452664339062886,-0.06067478110180438,-0.03850552176643282,-0.06410528544257395,9516.0,4758.0,False,False,False,False,True,
+wind_speed_North_Atlantic,weather,-0.05485640553302489,-0.08238912821997857,-0.03227936696253081,0.04530705798995712,0.035962729605927925,0.02413396232077376,5516.0,2758.0,False,False,False,False,True,
+cyclone_dist_Arabian_Sea,weather,0.08769619761800387,-0.033867990067188,0.021290225199084176,0.1269790109843611,0.03350287010872668,0.10136608546045894,9800.0,105.0,False,False,False,False,True,
+air_Mediterranean_Sea,weather,0.010428326091995345,0.006487418076811028,0.007587647277648293,-0.01031388510083817,-0.03279653016534454,-0.01977138760770098,5516.0,2757.0,False,False,False,False,True,
+Route_Mean_slp,weather,-0.020213876545499197,-0.0177860441061456,-0.012619373786523138,-0.022258485292816734,-0.0322573965281736,-0.0058706356144560615,9516.0,4758.0,False,False,False,False,True,
+air_Indian_Ocean,weather,0.016725234268430807,-0.00909012485481142,0.013283361573361262,0.048470544286310445,0.03188590016096163,0.05019062860266094,5516.0,2758.0,False,False,False,False,True,
+air_South_China_Sea,weather,0.06002821973890731,0.07558934571211479,0.02393600629915094,0.01697238774528955,0.03158498216563674,-0.003309969181143858,9516.0,2758.0,False,False,False,False,True,
+cyclone_active_Arabian_Sea,weather,0.049450566267347215,-0.03754926286455409,0.0017721297567622272,0.08204825151943905,0.03155053418009264,0.06913178685401936,9800.0,2.0,False,False,False,False,True,
+cyclone_wind_Mediterranean_Sea,weather,-0.06531911960849536,-0.09002832209279515,-0.019896729727224973,-0.005900981550056006,0.028700032777174447,-0.0374163094169917,9800.0,24.0,False,False,False,False,True,
+air_Arabian_Sea,weather,0.052217535632943686,0.08090246004406675,0.02117206882554908,0.008575486192319483,-0.028684627989407803,0.00809894217896649,5516.0,2758.0,False,False,False,False,True,
+cyclone_dist_Mediterranean_Sea,weather,-0.05506761852838049,-0.10969596229255506,-0.01874846369527595,0.008139149954276932,0.025269352303263482,-0.015407711619487032,9800.0,293.0,False,False,False,False,True,
+slp_Indian_Ocean,weather,0.013802630671314908,-0.024210920393137134,0.008711053979272068,0.019939080549944907,0.02525019825508149,0.016862875962009874,5516.0,2716.0,False,False,False,False,True,
+Route_Min_cyclone_dist,weather,-0.03193279419816165,-0.05675194828025669,-0.02199129426956578,0.03681026776305882,0.024598036437319174,0.0307897788952024,9800.0,961.0,False,False,False,False,True,
+slp_Mediterranean_Sea,weather,-0.0016772920471010543,-0.006573160147962362,-0.00356583830941386,0.026352873118571245,0.023675283508755852,0.030252491105172894,5516.0,2702.0,False,False,False,False,True,
+cyclone_active_North_Pacific_West,weather,-0.04308445073443449,-0.04519776931046124,-0.028128428870019304,-0.015694495351386714,0.023493386323768458,-0.04062387484154238,9800.0,2.0,False,False,False,False,True,
+cyclone_active_Mediterranean_Sea,weather,-0.06037969025882534,-0.0864944032154614,-0.014014341214395152,-0.007373751384255651,0.022486628730873537,-0.03743601057850943,9800.0,2.0,False,False,False,False,True,
+Route_Max_cyclone_wind,weather,-0.053230872663801033,-0.08011366168286081,-0.024586942096096406,-0.008127231581081923,0.02208300636168379,-0.021254803417246955,9800.0,44.0,False,False,False,False,True,
+slp_South_China_Sea,weather,-0.024541954048442834,-0.0529752595283834,-0.013225109087347413,0.028722111536122568,0.02174209347010527,0.0516397455427021,9516.0,2651.0,False,False,False,False,True,
+Route_Mean_air,weather,0.03200447888659199,0.03150416864603386,0.015783273403343435,0.0155146423028103,0.021198770589692436,-0.008331305927091392,9516.0,4758.0,False,False,False,False,True,
+cyclone_active_Indian_Ocean,weather,-0.029733044260045048,-0.057085284368909694,-0.02521697407109599,0.002325844780234582,-0.019449164388278904,0.0054703566950065705,9800.0,2.0,False,False,False,False,True,
+Coastal_Threat,weather,-0.014020399243336597,-0.06358861973243855,-0.018464855214765867,-0.017575571621719795,0.018845275605951946,-0.02074341674721067,9800.0,1105.0,False,False,False,False,True,
+Cyclone_Wind_Lag7d,weather,-0.02964747914196814,-0.05720673164203901,-0.003823048112604549,-0.010212714653460563,-0.01848145723175375,-0.022125558726073746,9772.0,44.0,False,False,False,False,True,
+Cyclone_Active_Lag30d,weather,-0.03027216314489336,-0.038773883555936604,-0.015309751380382692,0.0013802986489047893,0.018183613518115385,-0.0011816672253508235,9680.0,2.0,False,False,False,False,True,
+cyclone_slp_Mediterranean_Sea,weather,-0.062247666718526884,-0.08110575634784299,-0.011403586747514306,-0.011366828565782881,0.017914081911731532,-0.04119094855387408,9800.0,77.0,False,False,False,False,True,
+cyclone_slp_Indian_Ocean,weather,-0.04511026723344758,-0.07763688592766377,-0.03460730770894952,0.0028931083242465087,-0.01787567284434761,0.006979874792458024,9800.0,81.0,False,False,False,False,True,
+Route_cyclone_active,weather,-0.017946028390189727,-0.051909949338400874,-0.017426987139688942,0.023964466933219748,0.01705829166535983,0.008215454261418169,9800.0,2.0,False,False,False,False,True,
+cyclone_dist_Indian_Ocean,weather,-0.03406129136292507,-0.061983804634812255,-0.03283622525011268,0.04565296332655706,0.016746118026912813,0.0488393687131229,9800.0,578.0,False,False,False,False,True,
+cyclone_dist_North_Pacific_West,weather,-0.06862081978679828,-0.04387083931640779,-0.028102356945356663,-0.02626028422320542,0.016375658203272664,-0.043920384037328494,9800.0,343.0,False,False,False,False,True,
+cyclone_wind_South_China_Sea,weather,0.006864926423760709,0.02682471501769501,0.0005250116984674278,-0.006797400341018507,0.014417339277669894,-0.0025300266617139864,9800.0,16.0,False,False,False,False,True,
+Cyclone_Active_Lag14d,weather,-0.03747847600213852,-0.054551268429357966,-0.02206829260216879,-0.01252148209075387,-0.012599826567769161,-0.01782961324113665,9744.0,2.0,False,False,False,False,True,
+Price_Momentum_7d,price_history,0.07102344166610051,0.27440864235109785,0.03025835267995315,0.0047234666414975495,0.01216172774783227,-0.03057849077906771,9772.0,4640.0,False,False,False,False,True,
+wind_speed_Mediterranean_Sea,weather,-0.02023966872711283,-0.03389348213182639,-0.0217430628414696,-0.011688103059594626,0.011505578426803996,0.0018450540721462777,5516.0,2758.0,False,False,False,False,True,
+Route_Min_cyclone_slp,weather,-0.023847415797662298,-0.045553000388655,-0.014257021915824836,0.005021207445508088,0.011381357956841542,0.0015446439313135413,9800.0,98.0,False,False,False,False,True,
+Is_Peak_Season,price_history,-0.04605843366612139,-0.08466356652330369,-0.020247008302510777,-0.0018893367349015376,0.009750928377783236,-0.029196961860606472,9800.0,2.0,False,False,False,False,True,
+cyclone_slp_South_China_Sea,weather,0.018017452494353,0.02704319820823669,0.015822734064229547,-0.006085857000680015,0.009670116553823827,0.004351312577981222,9800.0,28.0,False,False,False,False,True,
+cyclone_slp_North_Sea,weather,-0.019353308037692724,-0.02439317041292111,-0.0098364254853728,-0.005821652243108743,0.009479053305489739,-0.01389183249993364,9800.0,33.0,False,False,False,False,True,
+Cyclone_Wind_Lag30d,weather,-0.018264201628696464,-0.02260712752487894,0.005766408708442793,-0.0006897432614950362,0.008581597781152427,-0.0012313994776632293,9680.0,44.0,False,False,False,False,True,
+cyclone_wind_Indian_Ocean,weather,-0.0538846929170017,-0.0804947713290989,-0.0306513490130507,-0.02694381592572555,-0.008574005820819389,-0.00963390277935983,9800.0,43.0,False,False,False,False,True,
+slp_North_Atlantic,weather,0.009682308753285945,0.058242423800976786,-0.007656735641032389,-0.002491416615064847,-0.008315183661264307,0.035646038180378564,5516.0,2739.0,False,False,False,False,True,
+cyclone_active_North_Pacific_East,weather,-0.005715043144464739,-0.009034839087481506,0.004903813114496006,-0.03250912622067325,-0.008013532799425063,-0.021865398229861666,9800.0,2.0,False,False,False,False,True,
+cyclone_dist_North_Pacific_East,weather,-0.011985745676390373,-0.009128275960030553,0.000675564953121678,-0.03609900009148443,-0.007863210325033012,-0.024310286111335032,9800.0,21.0,False,False,False,False,True,
+cyclone_wind_North_Sea,weather,-0.02144627840483898,-0.024137213424638496,-0.009464071288803574,-0.006257056900121163,0.00780109690503009,-0.015042432280904319,9800.0,12.0,False,False,False,False,True,
+wind_speed_North_Sea,weather,-0.022760637013486365,-0.028154226138204144,-0.030942654782302834,0.03145072692339673,0.006761481652731431,0.023457497153257754,5516.0,2758.0,False,False,False,False,True,
+Price_Zscore_30d,price_history,0.1154185229430601,0.228068241149196,0.06284145839649738,-0.029274991810783517,-0.00662501692351093,-0.026885631647679303,9756.0,4877.0,False,False,False,False,True,
+cyclone_wind_North_Pacific_West,weather,-0.06302552662485389,-0.05209602521832076,-0.03243892310806686,-0.02560989299558619,0.006559445663406568,-0.05434836235620609,9800.0,17.0,False,False,False,False,True,
+cyclone_active_North_Sea,weather,-0.02095146495384986,-0.025118404839286276,-0.011326149458273945,-0.00840759155953953,0.006473153145000499,-0.01656215196956927,9800.0,2.0,False,False,False,False,True,
+cyclone_active_South_China_Sea,weather,0.010907397450567636,0.016738509915308217,0.0061617674314747885,0.004089504253182911,0.006256647500031942,0.0019719428207993564,9800.0,2.0,False,False,False,False,True,
+cyclone_slp_North_Pacific_East,weather,0.018867521960961732,0.01327437246994306,-0.012974631124289766,0.005969976781955861,0.005723720926603427,0.007440174400272973,9800.0,5.0,False,False,False,False,True,
+cyclone_wind_North_Pacific_East,weather,0.0005114964778865614,-0.006132995894010039,-0.010684064309696425,-0.013186580708611968,0.005530864545200297,-0.006345216196006985,9800.0,3.0,False,False,False,False,True,
+cyclone_dist_North_Sea,weather,-0.008475407089334695,-0.04472330079593915,-0.009427754819884605,-0.003352748934602988,0.005375089153160391,-0.009541613348243124,9800.0,35.0,False,False,False,False,True,
+Congestion_Risk,weather,-0.0469180597061458,-0.07143892606047168,-0.0213691444681929,-0.03396022979891458,-0.004816865208869955,-0.04963636947172776,9800.0,920.0,False,False,False,False,True,
+cyclone_dist_South_China_Sea,weather,0.030560159001976544,0.02739608980755526,0.013574377650352963,0.004601080763495336,-0.0039449798622101535,0.008646964206422109,9800.0,176.0,False,False,False,False,True,
+cyclone_slp_North_Pacific_West,weather,-0.02636040491909632,-0.028025801610929723,-0.01770573002879176,-0.03972017021554335,0.003934621982860338,-0.04637284450617825,9800.0,43.0,False,False,False,False,True,
+Cyclone_Active_Lag7d,weather,-0.04013068753965264,-0.04401214151963773,-0.012046446147820382,-0.026323337322794155,-0.0027463986954183064,-0.030692557925693916,9772.0,2.0,False,False,False,False,True,
+Cyclone_Wind_Lag14d,weather,-0.016627654895290153,-0.04498768033638033,-0.015029809965134639,-0.0016298792791958764,0.0008339605719829645,0.0004260593913159861,9744.0,44.0,False,False,False,False,True,
+wind_speed_South_China_Sea,weather,-0.004392321417868852,-0.004299312107701833,0.0062844795777872095,0.0015933509816146694,-0.0004170587797562003,0.004908372141174202,9516.0,2758.0,False,False,False,False,True,
+cyclone_wind_Red_Sea,weather,,,,,,,9800.0,1.0,False,False,False,False,True,
+cyclone_slp_Red_Sea,weather,,,,,,,9800.0,1.0,False,False,False,False,True,
+cyclone_dist_Red_Sea,weather,,,,,,,9800.0,1.0,False,False,False,False,True,
+cyclone_active_Red_Sea,weather,,,,,,,9800.0,1.0,False,False,False,False,True,
+cyclone_wind_North_Atlantic,weather,,,,,,,9800.0,1.0,False,False,False,False,True,
+cyclone_slp_North_Atlantic,weather,,,,,,,9800.0,1.0,False,False,False,False,True,
+cyclone_dist_North_Atlantic,weather,,,,,,,9800.0,1.0,False,False,False,False,True,
+cyclone_active_North_Atlantic,weather,,,,,,,9800.0,1.0,False,False,False,False,True,
+Origin_LSCI,STRUCTURAL,,,,,,,,,,,,,,t+1 leak: col[t] == col.shift(-1)[t] via Origin_LSCI frac=0.9904
+Dest_LSCI,STRUCTURAL,,,,,,,,,,,,,,t+1 leak: col[t] == col.shift(-1)[t] via Dest_LSCI frac=0.9904
+Route_Mean_LSCI,STRUCTURAL,,,,,,,,,,,,,,t+1 leak: col[t] == col.shift(-1)[t] via Route_Mean_LSCI frac=0.9904
+cyclone_slp_North_Pacific_East,STRUCTURAL,,,,,,,,,,,,,,t+1 leak: col[t] == col.shift(-1)[t] via cyclone_wind_North_Sea frac=0.9904
+cyclone_slp_North_Pacific_East,STRUCTURAL,,,,,,,,,,,,,,t+1 leak: col[t] == col.shift(-1)[t] via cyclone_slp_North_Sea frac=0.9904
+cyclone_slp_North_Pacific_East,STRUCTURAL,,,,,,,,,,,,,,t+1 leak: col[t] == col.shift(-1)[t] via cyclone_dist_North_Sea frac=0.9920
+cyclone_wind_North_Sea,STRUCTURAL,,,,,,,,,,,,,,t+1 leak: col[t] == col.shift(-1)[t] via cyclone_slp_North_Pacific_East frac=0.9904
+cyclone_slp_North_Sea,STRUCTURAL,,,,,,,,,,,,,,t+1 leak: col[t] == col.shift(-1)[t] via cyclone_slp_North_Pacific_East frac=0.9904
+cyclone_dist_North_Sea,STRUCTURAL,,,,,,,,,,,,,,t+1 leak: col[t] == col.shift(-1)[t] via cyclone_slp_North_Pacific_East frac=0.9920
+cyclone_slp_North_Pacific_East,STRUCTURAL,,,,,,,,,,,,,,t+1 leak: col[t] == col.shift(-1)[t] via cyclone_slp_North_Pacific_East frac=0.9984
+cyclone_dist_North_Pacific_East,STRUCTURAL,,,,,,,,,,,,,,t+1 leak: col[t] == col.shift(-1)[t] via cyclone_slp_North_Pacific_East frac=0.9951
+cyclone_slp_North_Pacific_East,STRUCTURAL,,,,,,,,,,,,,,t+1 leak: col[t] == col.shift(-1)[t] via cyclone_dist_North_Pacific_East frac=0.9951
+cyclone_dist_North_Pacific_East,STRUCTURAL,,,,,,,,,,,,,,t+1 leak: col[t] == col.shift(-1)[t] via cyclone_dist_North_Pacific_East frac=0.9924
+cyclone_slp_North_Pacific_East,STRUCTURAL,,,,,,,,,,,,,,t+2 leak: col[t] == col.shift(-2)[t] via cyclone_wind_North_Sea frac=0.9904
+cyclone_slp_North_Pacific_East,STRUCTURAL,,,,,,,,,,,,,,t+2 leak: col[t] == col.shift(-2)[t] via cyclone_slp_North_Sea frac=0.9904
+cyclone_slp_North_Pacific_East,STRUCTURAL,,,,,,,,,,,,,,t+2 leak: col[t] == col.shift(-2)[t] via cyclone_dist_North_Sea frac=0.9920
+cyclone_wind_North_Sea,STRUCTURAL,,,,,,,,,,,,,,t+2 leak: col[t] == col.shift(-2)[t] via cyclone_slp_North_Pacific_East frac=0.9904
+cyclone_slp_North_Sea,STRUCTURAL,,,,,,,,,,,,,,t+2 leak: col[t] == col.shift(-2)[t] via cyclone_slp_North_Pacific_East frac=0.9904
+cyclone_dist_North_Sea,STRUCTURAL,,,,,,,,,,,,,,t+2 leak: col[t] == col.shift(-2)[t] via cyclone_slp_North_Pacific_East frac=0.9920
+cyclone_slp_North_Pacific_East,STRUCTURAL,,,,,,,,,,,,,,t+2 leak: col[t] == col.shift(-2)[t] via cyclone_slp_North_Pacific_East frac=0.9984
+cyclone_dist_North_Pacific_East,STRUCTURAL,,,,,,,,,,,,,,t+2 leak: col[t] == col.shift(-2)[t] via cyclone_slp_North_Pacific_East frac=0.9951
+cyclone_slp_North_Pacific_East,STRUCTURAL,,,,,,,,,,,,,,t+2 leak: col[t] == col.shift(-2)[t] via cyclone_dist_North_Pacific_East frac=0.9951
+cyclone_dist_North_Pacific_East,STRUCTURAL,,,,,,,,,,,,,,t+2 leak: col[t] == col.shift(-2)[t] via cyclone_dist_North_Pacific_East frac=0.9920
+cyclone_slp_North_Pacific_East,STRUCTURAL,,,,,,,,,,,,,,t+3 leak: col[t] == col.shift(-3)[t] via cyclone_wind_North_Sea frac=0.9904
+cyclone_slp_North_Pacific_East,STRUCTURAL,,,,,,,,,,,,,,t+3 leak: col[t] == col.shift(-3)[t] via cyclone_slp_North_Sea frac=0.9904
+cyclone_slp_North_Pacific_East,STRUCTURAL,,,,,,,,,,,,,,t+3 leak: col[t] == col.shift(-3)[t] via cyclone_dist_North_Sea frac=0.9920
+Cyclone_Wind_Forecast3d,STRUCTURAL,,,,,,,,,,,,,,t+3 leak: col[t] == col.shift(-3)[t] via Route_Max_cyclone_wind frac=1.0000
+cyclone_wind_North_Sea,STRUCTURAL,,,,,,,,,,,,,,t+3 leak: col[t] == col.shift(-3)[t] via cyclone_slp_North_Pacific_East frac=0.9904
+cyclone_slp_North_Sea,STRUCTURAL,,,,,,,,,,,,,,t+3 leak: col[t] == col.shift(-3)[t] via cyclone_slp_North_Pacific_East frac=0.9904
+cyclone_dist_North_Sea,STRUCTURAL,,,,,,,,,,,,,,t+3 leak: col[t] == col.shift(-3)[t] via cyclone_slp_North_Pacific_East frac=0.9920
+cyclone_slp_North_Pacific_East,STRUCTURAL,,,,,,,,,,,,,,t+3 leak: col[t] == col.shift(-3)[t] via cyclone_slp_North_Pacific_East frac=0.9984
+cyclone_dist_North_Pacific_East,STRUCTURAL,,,,,,,,,,,,,,t+3 leak: col[t] == col.shift(-3)[t] via cyclone_slp_North_Pacific_East frac=0.9951
+cyclone_slp_North_Pacific_East,STRUCTURAL,,,,,,,,,,,,,,t+3 leak: col[t] == col.shift(-3)[t] via cyclone_dist_North_Pacific_East frac=0.9951
+cyclone_dist_North_Pacific_East,STRUCTURAL,,,,,,,,,,,,,,t+3 leak: col[t] == col.shift(-3)[t] via cyclone_dist_North_Pacific_East frac=0.9918
+cyclone_slp_North_Pacific_East,STRUCTURAL,,,,,,,,,,,,,,t+4 leak: col[t] == col.shift(-4)[t] via cyclone_wind_North_Sea frac=0.9904
+cyclone_slp_North_Pacific_East,STRUCTURAL,,,,,,,,,,,,,,t+4 leak: col[t] == col.shift(-4)[t] via cyclone_slp_North_Sea frac=0.9904
+cyclone_slp_North_Pacific_East,STRUCTURAL,,,,,,,,,,,,,,t+4 leak: col[t] == col.shift(-4)[t] via cyclone_dist_North_Sea frac=0.9920
+cyclone_wind_North_Sea,STRUCTURAL,,,,,,,,,,,,,,t+4 leak: col[t] == col.shift(-4)[t] via cyclone_slp_North_Pacific_East frac=0.9904
+cyclone_slp_North_Sea,STRUCTURAL,,,,,,,,,,,,,,t+4 leak: col[t] == col.shift(-4)[t] via cyclone_slp_North_Pacific_East frac=0.9904
+cyclone_dist_North_Sea,STRUCTURAL,,,,,,,,,,,,,,t+4 leak: col[t] == col.shift(-4)[t] via cyclone_slp_North_Pacific_East frac=0.9920
+cyclone_slp_North_Pacific_East,STRUCTURAL,,,,,,,,,,,,,,t+4 leak: col[t] == col.shift(-4)[t] via cyclone_slp_North_Pacific_East frac=0.9984
+cyclone_dist_North_Pacific_East,STRUCTURAL,,,,,,,,,,,,,,t+4 leak: col[t] == col.shift(-4)[t] via cyclone_slp_North_Pacific_East frac=0.9951
+cyclone_slp_North_Pacific_East,STRUCTURAL,,,,,,,,,,,,,,t+4 leak: col[t] == col.shift(-4)[t] via cyclone_dist_North_Pacific_East frac=0.9951
+cyclone_dist_North_Pacific_East,STRUCTURAL,,,,,,,,,,,,,,t+4 leak: col[t] == col.shift(-4)[t] via cyclone_dist_North_Pacific_East frac=0.9918
+Cyclone_Wind_Forecast7d,STRUCTURAL,,,,,,,,,,,,,,t+4 leak: col[t] == col.shift(-4)[t] via Cyclone_Wind_Forecast3d frac=1.0000
+cyclone_slp_North_Pacific_East,STRUCTURAL,,,,,,,,,,,,,,t+5 leak: col[t] == col.shift(-5)[t] via cyclone_wind_North_Sea frac=0.9904
+cyclone_slp_North_Pacific_East,STRUCTURAL,,,,,,,,,,,,,,t+5 leak: col[t] == col.shift(-5)[t] via cyclone_slp_North_Sea frac=0.9904
+cyclone_slp_North_Pacific_East,STRUCTURAL,,,,,,,,,,,,,,t+5 leak: col[t] == col.shift(-5)[t] via cyclone_dist_North_Sea frac=0.9920
+cyclone_wind_North_Sea,STRUCTURAL,,,,,,,,,,,,,,t+5 leak: col[t] == col.shift(-5)[t] via cyclone_slp_North_Pacific_East frac=0.9904
+cyclone_slp_North_Sea,STRUCTURAL,,,,,,,,,,,,,,t+5 leak: col[t] == col.shift(-5)[t] via cyclone_slp_North_Pacific_East frac=0.9904
+cyclone_dist_North_Sea,STRUCTURAL,,,,,,,,,,,,,,t+5 leak: col[t] == col.shift(-5)[t] via cyclone_slp_North_Pacific_East frac=0.9920
+cyclone_slp_North_Pacific_East,STRUCTURAL,,,,,,,,,,,,,,t+5 leak: col[t] == col.shift(-5)[t] via cyclone_slp_North_Pacific_East frac=0.9984
+cyclone_dist_North_Pacific_East,STRUCTURAL,,,,,,,,,,,,,,t+5 leak: col[t] == col.shift(-5)[t] via cyclone_slp_North_Pacific_East frac=0.9951
+cyclone_slp_North_Pacific_East,STRUCTURAL,,,,,,,,,,,,,,t+5 leak: col[t] == col.shift(-5)[t] via cyclone_dist_North_Pacific_East frac=0.9951
+cyclone_dist_North_Pacific_East,STRUCTURAL,,,,,,,,,,,,,,t+5 leak: col[t] == col.shift(-5)[t] via cyclone_dist_North_Pacific_East frac=0.9920
+cyclone_slp_North_Pacific_East,STRUCTURAL,,,,,,,,,,,,,,t+6 leak: col[t] == col.shift(-6)[t] via cyclone_wind_North_Sea frac=0.9904
+cyclone_slp_North_Pacific_East,STRUCTURAL,,,,,,,,,,,,,,t+6 leak: col[t] == col.shift(-6)[t] via cyclone_slp_North_Sea frac=0.9904
+cyclone_slp_North_Pacific_East,STRUCTURAL,,,,,,,,,,,,,,t+6 leak: col[t] == col.shift(-6)[t] via cyclone_dist_North_Sea frac=0.9920
+cyclone_wind_North_Sea,STRUCTURAL,,,,,,,,,,,,,,t+6 leak: col[t] == col.shift(-6)[t] via cyclone_slp_North_Pacific_East frac=0.9904
+cyclone_slp_North_Sea,STRUCTURAL,,,,,,,,,,,,,,t+6 leak: col[t] == col.shift(-6)[t] via cyclone_slp_North_Pacific_East frac=0.9904
+cyclone_dist_North_Sea,STRUCTURAL,,,,,,,,,,,,,,t+6 leak: col[t] == col.shift(-6)[t] via cyclone_slp_North_Pacific_East frac=0.9920
+cyclone_slp_North_Pacific_East,STRUCTURAL,,,,,,,,,,,,,,t+6 leak: col[t] == col.shift(-6)[t] via cyclone_slp_North_Pacific_East frac=0.9984
+cyclone_dist_North_Pacific_East,STRUCTURAL,,,,,,,,,,,,,,t+6 leak: col[t] == col.shift(-6)[t] via cyclone_slp_North_Pacific_East frac=0.9951
+cyclone_slp_North_Pacific_East,STRUCTURAL,,,,,,,,,,,,,,t+6 leak: col[t] == col.shift(-6)[t] via cyclone_dist_North_Pacific_East frac=0.9951
+cyclone_dist_North_Pacific_East,STRUCTURAL,,,,,,,,,,,,,,t+6 leak: col[t] == col.shift(-6)[t] via cyclone_dist_North_Pacific_East frac=0.9918
+Wind_Speed_Forecast7d,STRUCTURAL,,,,,,,,,,,,,,t+7 leak: col[t] == col.shift(-7)[t] via Route_Mean_wind_speed frac=1.0000
+cyclone_slp_North_Pacific_East,STRUCTURAL,,,,,,,,,,,,,,t+7 leak: col[t] == col.shift(-7)[t] via cyclone_wind_North_Sea frac=0.9904
+cyclone_slp_North_Pacific_East,STRUCTURAL,,,,,,,,,,,,,,t+7 leak: col[t] == col.shift(-7)[t] via cyclone_slp_North_Sea frac=0.9904
+cyclone_slp_North_Pacific_East,STRUCTURAL,,,,,,,,,,,,,,t+7 leak: col[t] == col.shift(-7)[t] via cyclone_dist_North_Sea frac=0.9920
+Cyclone_Wind_Forecast7d,STRUCTURAL,,,,,,,,,,,,,,t+7 leak: col[t] == col.shift(-7)[t] via Route_Max_cyclone_wind frac=1.0000
+cyclone_wind_North_Sea,STRUCTURAL,,,,,,,,,,,,,,t+7 leak: col[t] == col.shift(-7)[t] via cyclone_slp_North_Pacific_East frac=0.9904
+cyclone_slp_North_Sea,STRUCTURAL,,,,,,,,,,,,,,t+7 leak: col[t] == col.shift(-7)[t] via cyclone_slp_North_Pacific_East frac=0.9904
+cyclone_dist_North_Sea,STRUCTURAL,,,,,,,,,,,,,,t+7 leak: col[t] == col.shift(-7)[t] via cyclone_slp_North_Pacific_East frac=0.9920
+cyclone_slp_North_Pacific_East,STRUCTURAL,,,,,,,,,,,,,,t+7 leak: col[t] == col.shift(-7)[t] via cyclone_slp_North_Pacific_East frac=0.9984
+cyclone_dist_North_Pacific_East,STRUCTURAL,,,,,,,,,,,,,,t+7 leak: col[t] == col.shift(-7)[t] via cyclone_slp_North_Pacific_East frac=0.9951
+cyclone_slp_North_Pacific_East,STRUCTURAL,,,,,,,,,,,,,,t+7 leak: col[t] == col.shift(-7)[t] via cyclone_dist_North_Pacific_East frac=0.9951
+cyclone_dist_North_Pacific_East,STRUCTURAL,,,,,,,,,,,,,,t+7 leak: col[t] == col.shift(-7)[t] via cyclone_dist_North_Pacific_East frac=0.9918
+Price_USD,STRUCTURAL,,,,,,,,,,,,,,t+7 leak: col[t] == col.shift(-7)[t] via Price_Lag_7d frac=1.0000
+Route_Max_cyclone_wind,STRUCTURAL,,,,,,,,,,,,,,t+7 leak: col[t] == col.shift(-7)[t] via Cyclone_Wind_Lag7d frac=1.0000
+Cyclone_Wind_Lag7d,STRUCTURAL,,,,,,,,,,,,,,t+7 leak: col[t] == col.shift(-7)[t] via Cyclone_Wind_Lag14d frac=1.0000
+Route_Mean_wind_speed,STRUCTURAL,,,,,,,,,,,,,,t+7 leak: col[t] == col.shift(-7)[t] via Wind_Speed_Lag7d frac=1.0000
+Wind_Speed_Lag7d,STRUCTURAL,,,,,,,,,,,,,,t+7 leak: col[t] == col.shift(-7)[t] via Wind_Speed_Lag14d frac=1.0000
+cyclone_dist_North_Sea,STRUCTURAL,,,,,,,,,,,,,,forward-rolling leak: col[t] == mean(col[t+1..t+3]) via cyclone_slp_North_Pacific_East frac=0.9904
+cyclone_slp_North_Pacific_East,STRUCTURAL,,,,,,,,,,,,,,forward-rolling leak: col[t] == mean(col[t+1..t+3]) via cyclone_slp_North_Pacific_East frac=0.9967
+cyclone_dist_North_Pacific_East,STRUCTURAL,,,,,,,,,,,,,,forward-rolling leak: col[t] == mean(col[t+1..t+3]) via cyclone_slp_North_Pacific_East frac=0.9935
+cyclone_dist_North_Sea,STRUCTURAL,,,,,,,,,,,,,,forward-rolling leak: col[t] == max(col[t+1..t+3]) via cyclone_slp_North_Pacific_East frac=0.9904
+cyclone_slp_North_Pacific_East,STRUCTURAL,,,,,,,,,,,,,,forward-rolling leak: col[t] == max(col[t+1..t+3]) via cyclone_slp_North_Pacific_East frac=0.9967
+cyclone_dist_North_Pacific_East,STRUCTURAL,,,,,,,,,,,,,,forward-rolling leak: col[t] == max(col[t+1..t+3]) via cyclone_slp_North_Pacific_East frac=0.9935
+cyclone_wind_North_Sea,STRUCTURAL,,,,,,,,,,,,,,forward-rolling leak: col[t] == min(col[t+1..t+3]) via cyclone_wind_North_Sea frac=0.9906
+cyclone_slp_North_Sea,STRUCTURAL,,,,,,,,,,,,,,forward-rolling leak: col[t] == min(col[t+1..t+3]) via cyclone_wind_North_Sea frac=0.9906
+cyclone_dist_North_Sea,STRUCTURAL,,,,,,,,,,,,,,forward-rolling leak: col[t] == min(col[t+1..t+3]) via cyclone_wind_North_Sea frac=0.9922
+cyclone_slp_North_Pacific_East,STRUCTURAL,,,,,,,,,,,,,,forward-rolling leak: col[t] == min(col[t+1..t+3]) via cyclone_wind_North_Sea frac=0.9986
+cyclone_dist_North_Pacific_East,STRUCTURAL,,,,,,,,,,,,,,forward-rolling leak: col[t] == min(col[t+1..t+3]) via cyclone_wind_North_Sea frac=0.9953
+cyclone_wind_North_Sea,STRUCTURAL,,,,,,,,,,,,,,forward-rolling leak: col[t] == min(col[t+1..t+3]) via cyclone_slp_North_Sea frac=0.9906
+cyclone_slp_North_Sea,STRUCTURAL,,,,,,,,,,,,,,forward-rolling leak: col[t] == min(col[t+1..t+3]) via cyclone_slp_North_Sea frac=0.9906
+cyclone_dist_North_Sea,STRUCTURAL,,,,,,,,,,,,,,forward-rolling leak: col[t] == min(col[t+1..t+3]) via cyclone_slp_North_Sea frac=0.9922
+cyclone_slp_North_Pacific_East,STRUCTURAL,,,,,,,,,,,,,,forward-rolling leak: col[t] == min(col[t+1..t+3]) via cyclone_slp_North_Sea frac=0.9986
+cyclone_dist_North_Pacific_East,STRUCTURAL,,,,,,,,,,,,,,forward-rolling leak: col[t] == min(col[t+1..t+3]) via cyclone_slp_North_Sea frac=0.9953
+cyclone_wind_North_Sea,STRUCTURAL,,,,,,,,,,,,,,forward-rolling leak: col[t] == min(col[t+1..t+3]) via cyclone_dist_North_Sea frac=0.9906
+cyclone_slp_North_Sea,STRUCTURAL,,,,,,,,,,,,,,forward-rolling leak: col[t] == min(col[t+1..t+3]) via cyclone_dist_North_Sea frac=0.9906
+cyclone_dist_North_Sea,STRUCTURAL,,,,,,,,,,,,,,forward-rolling leak: col[t] == min(col[t+1..t+3]) via cyclone_dist_North_Sea frac=0.9922
+cyclone_slp_North_Pacific_East,STRUCTURAL,,,,,,,,,,,,,,forward-rolling leak: col[t] == min(col[t+1..t+3]) via cyclone_dist_North_Sea frac=0.9986
+cyclone_dist_North_Pacific_East,STRUCTURAL,,,,,,,,,,,,,,forward-rolling leak: col[t] == min(col[t+1..t+3]) via cyclone_dist_North_Sea frac=0.9953
+cyclone_wind_North_Sea,STRUCTURAL,,,,,,,,,,,,,,forward-rolling leak: col[t] == min(col[t+1..t+3]) via cyclone_slp_North_Pacific_East frac=0.9912
+cyclone_slp_North_Sea,STRUCTURAL,,,,,,,,,,,,,,forward-rolling leak: col[t] == min(col[t+1..t+3]) via cyclone_slp_North_Pacific_East frac=0.9912
+cyclone_dist_North_Sea,STRUCTURAL,,,,,,,,,,,,,,forward-rolling leak: col[t] == min(col[t+1..t+3]) via cyclone_slp_North_Pacific_East frac=0.9928
+cyclone_slp_North_Pacific_East,STRUCTURAL,,,,,,,,,,,,,,forward-rolling leak: col[t] == min(col[t+1..t+3]) via cyclone_slp_North_Pacific_East frac=0.9992
+cyclone_dist_North_Pacific_East,STRUCTURAL,,,,,,,,,,,,,,forward-rolling leak: col[t] == min(col[t+1..t+3]) via cyclone_slp_North_Pacific_East frac=0.9959
+cyclone_wind_North_Sea,STRUCTURAL,,,,,,,,,,,,,,forward-rolling leak: col[t] == min(col[t+1..t+3]) via cyclone_dist_North_Pacific_East frac=0.9910
+cyclone_slp_North_Sea,STRUCTURAL,,,,,,,,,,,,,,forward-rolling leak: col[t] == min(col[t+1..t+3]) via cyclone_dist_North_Pacific_East frac=0.9910
+cyclone_dist_North_Sea,STRUCTURAL,,,,,,,,,,,,,,forward-rolling leak: col[t] == min(col[t+1..t+3]) via cyclone_dist_North_Pacific_East frac=0.9926
+cyclone_slp_North_Pacific_East,STRUCTURAL,,,,,,,,,,,,,,forward-rolling leak: col[t] == min(col[t+1..t+3]) via cyclone_dist_North_Pacific_East frac=0.9990
+cyclone_dist_North_Pacific_East,STRUCTURAL,,,,,,,,,,,,,,forward-rolling leak: col[t] == min(col[t+1..t+3]) via cyclone_dist_North_Pacific_East frac=0.9957
+cyclone_dist_North_Sea,STRUCTURAL,,,,,,,,,,,,,,forward-rolling leak: col[t] == sum(col[t+1..t+3]) via cyclone_slp_North_Pacific_East frac=0.9904
+cyclone_slp_North_Pacific_East,STRUCTURAL,,,,,,,,,,,,,,forward-rolling leak: col[t] == sum(col[t+1..t+3]) via cyclone_slp_North_Pacific_East frac=0.9967
+cyclone_dist_North_Pacific_East,STRUCTURAL,,,,,,,,,,,,,,forward-rolling leak: col[t] == sum(col[t+1..t+3]) via cyclone_slp_North_Pacific_East frac=0.9935
+cyclone_slp_North_Pacific_East,STRUCTURAL,,,,,,,,,,,,,,forward-rolling leak: col[t] == mean(col[t+1..t+5]) via cyclone_slp_North_Pacific_East frac=0.9951
+cyclone_dist_North_Pacific_East,STRUCTURAL,,,,,,,,,,,,,,forward-rolling leak: col[t] == mean(col[t+1..t+5]) via cyclone_slp_North_Pacific_East frac=0.9918
+cyclone_slp_North_Pacific_East,STRUCTURAL,,,,,,,,,,,,,,forward-rolling leak: col[t] == max(col[t+1..t+5]) via cyclone_slp_North_Pacific_East frac=0.9951
+cyclone_dist_North_Pacific_East,STRUCTURAL,,,,,,,,,,,,,,forward-rolling leak: col[t] == max(col[t+1..t+5]) via cyclone_slp_North_Pacific_East frac=0.9918
+cyclone_slp_North_Pacific_East,STRUCTURAL,,,,,,,,,,,,,,forward-rolling leak: col[t] == min(col[t+1..t+5]) via cyclone_wind_South_China_Sea frac=0.9949
+cyclone_dist_North_Pacific_East,STRUCTURAL,,,,,,,,,,,,,,forward-rolling leak: col[t] == min(col[t+1..t+5]) via cyclone_wind_South_China_Sea frac=0.9916
+cyclone_dist_North_Sea,STRUCTURAL,,,,,,,,,,,,,,forward-rolling leak: col[t] == min(col[t+1..t+5]) via cyclone_dist_South_China_Sea frac=0.9916
+cyclone_slp_North_Pacific_East,STRUCTURAL,,,,,,,,,,,,,,forward-rolling leak: col[t] == min(col[t+1..t+5]) via cyclone_dist_South_China_Sea frac=0.9980
+cyclone_dist_North_Pacific_East,STRUCTURAL,,,,,,,,,,,,,,forward-rolling leak: col[t] == min(col[t+1..t+5]) via cyclone_dist_South_China_Sea frac=0.9947
+cyclone_slp_North_Pacific_East,STRUCTURAL,,,,,,,,,,,,,,forward-rolling leak: col[t] == min(col[t+1..t+5]) via cyclone_wind_Arabian_Sea frac=0.9951
+cyclone_dist_North_Pacific_East,STRUCTURAL,,,,,,,,,,,,,,forward-rolling leak: col[t] == min(col[t+1..t+5]) via cyclone_wind_Arabian_Sea frac=0.9918
+cyclone_slp_North_Pacific_East,STRUCTURAL,,,,,,,,,,,,,,forward-rolling leak: col[t] == min(col[t+1..t+5]) via cyclone_slp_Arabian_Sea frac=0.9951
+cyclone_dist_North_Pacific_East,STRUCTURAL,,,,,,,,,,,,,,forward-rolling leak: col[t] == min(col[t+1..t+5]) via cyclone_slp_Arabian_Sea frac=0.9918
+cyclone_slp_North_Pacific_East,STRUCTURAL,,,,,,,,,,,,,,forward-rolling leak: col[t] == min(col[t+1..t+5]) via cyclone_dist_Arabian_Sea frac=0.9941
+cyclone_dist_North_Pacific_East,STRUCTURAL,,,,,,,,,,,,,,forward-rolling leak: col[t] == min(col[t+1..t+5]) via cyclone_dist_Arabian_Sea frac=0.9908
+cyclone_wind_North_Sea,STRUCTURAL,,,,,,,,,,,,,,forward-rolling leak: col[t] == min(col[t+1..t+5]) via cyclone_wind_North_Sea frac=0.9912
+cyclone_slp_North_Sea,STRUCTURAL,,,,,,,,,,,,,,forward-rolling leak: col[t] == min(col[t+1..t+5]) via cyclone_wind_North_Sea frac=0.9912
+cyclone_dist_North_Sea,STRUCTURAL,,,,,,,,,,,,,,forward-rolling leak: col[t] == min(col[t+1..t+5]) via cyclone_wind_North_Sea frac=0.9928
+cyclone_slp_North_Pacific_East,STRUCTURAL,,,,,,,,,,,,,,forward-rolling leak: col[t] == min(col[t+1..t+5]) via cyclone_wind_North_Sea frac=0.9992
+cyclone_dist_North_Pacific_East,STRUCTURAL,,,,,,,,,,,,,,forward-rolling leak: col[t] == min(col[t+1..t+5]) via cyclone_wind_North_Sea frac=0.9959
+cyclone_wind_North_Sea,STRUCTURAL,,,,,,,,,,,,,,forward-rolling leak: col[t] == min(col[t+1..t+5]) via cyclone_slp_North_Sea frac=0.9912
+cyclone_slp_North_Sea,STRUCTURAL,,,,,,,,,,,,,,forward-rolling leak: col[t] == min(col[t+1..t+5]) via cyclone_slp_North_Sea frac=0.9912
+cyclone_dist_North_Sea,STRUCTURAL,,,,,,,,,,,,,,forward-rolling leak: col[t] == min(col[t+1..t+5]) via cyclone_slp_North_Sea frac=0.9928
+cyclone_slp_North_Pacific_East,STRUCTURAL,,,,,,,,,,,,,,forward-rolling leak: col[t] == min(col[t+1..t+5]) via cyclone_slp_North_Sea frac=0.9992
+cyclone_dist_North_Pacific_East,STRUCTURAL,,,,,,,,,,,,,,forward-rolling leak: col[t] == min(col[t+1..t+5]) via cyclone_slp_North_Sea frac=0.9959
+cyclone_wind_North_Sea,STRUCTURAL,,,,,,,,,,,,,,forward-rolling leak: col[t] == min(col[t+1..t+5]) via cyclone_dist_North_Sea frac=0.9912
+cyclone_slp_North_Sea,STRUCTURAL,,,,,,,,,,,,,,forward-rolling leak: col[t] == min(col[t+1..t+5]) via cyclone_dist_North_Sea frac=0.9912
+cyclone_dist_North_Sea,STRUCTURAL,,,,,,,,,,,,,,forward-rolling leak: col[t] == min(col[t+1..t+5]) via cyclone_dist_North_Sea frac=0.9928
+cyclone_slp_North_Pacific_East,STRUCTURAL,,,,,,,,,,,,,,forward-rolling leak: col[t] == min(col[t+1..t+5]) via cyclone_dist_North_Sea frac=0.9992
+cyclone_dist_North_Pacific_East,STRUCTURAL,,,,,,,,,,,,,,forward-rolling leak: col[t] == min(col[t+1..t+5]) via cyclone_dist_North_Sea frac=0.9959
+cyclone_wind_North_Sea,STRUCTURAL,,,,,,,,,,,,,,forward-rolling leak: col[t] == min(col[t+1..t+5]) via cyclone_slp_North_Pacific_East frac=0.9912
+cyclone_slp_North_Sea,STRUCTURAL,,,,,,,,,,,,,,forward-rolling leak: col[t] == min(col[t+1..t+5]) via cyclone_slp_North_Pacific_East frac=0.9912
+cyclone_dist_North_Sea,STRUCTURAL,,,,,,,,,,,,,,forward-rolling leak: col[t] == min(col[t+1..t+5]) via cyclone_slp_North_Pacific_East frac=0.9928
+cyclone_slp_North_Pacific_East,STRUCTURAL,,,,,,,,,,,,,,forward-rolling leak: col[t] == min(col[t+1..t+5]) via cyclone_slp_North_Pacific_East frac=0.9992
+cyclone_dist_North_Pacific_East,STRUCTURAL,,,,,,,,,,,,,,forward-rolling leak: col[t] == min(col[t+1..t+5]) via cyclone_slp_North_Pacific_East frac=0.9959
+cyclone_wind_North_Sea,STRUCTURAL,,,,,,,,,,,,,,forward-rolling leak: col[t] == min(col[t+1..t+5]) via cyclone_dist_North_Pacific_East frac=0.9912
+cyclone_slp_North_Sea,STRUCTURAL,,,,,,,,,,,,,,forward-rolling leak: col[t] == min(col[t+1..t+5]) via cyclone_dist_North_Pacific_East frac=0.9912
+cyclone_dist_North_Sea,STRUCTURAL,,,,,,,,,,,,,,forward-rolling leak: col[t] == min(col[t+1..t+5]) via cyclone_dist_North_Pacific_East frac=0.9928
+cyclone_slp_North_Pacific_East,STRUCTURAL,,,,,,,,,,,,,,forward-rolling leak: col[t] == min(col[t+1..t+5]) via cyclone_dist_North_Pacific_East frac=0.9992
+cyclone_dist_North_Pacific_East,STRUCTURAL,,,,,,,,,,,,,,forward-rolling leak: col[t] == min(col[t+1..t+5]) via cyclone_dist_North_Pacific_East frac=0.9959
+cyclone_slp_North_Pacific_East,STRUCTURAL,,,,,,,,,,,,,,forward-rolling leak: col[t] == sum(col[t+1..t+5]) via cyclone_slp_North_Pacific_East frac=0.9951
+cyclone_dist_North_Pacific_East,STRUCTURAL,,,,,,,,,,,,,,forward-rolling leak: col[t] == sum(col[t+1..t+5]) via cyclone_slp_North_Pacific_East frac=0.9918
+cyclone_slp_North_Pacific_East,STRUCTURAL,,,,,,,,,,,,,,forward-rolling leak: col[t] == mean(col[t+1..t+7]) via cyclone_slp_North_Pacific_East frac=0.9935
+cyclone_dist_North_Pacific_East,STRUCTURAL,,,,,,,,,,,,,,forward-rolling leak: col[t] == mean(col[t+1..t+7]) via cyclone_slp_North_Pacific_East frac=0.9902
+cyclone_slp_North_Pacific_East,STRUCTURAL,,,,,,,,,,,,,,forward-rolling leak: col[t] == max(col[t+1..t+7]) via cyclone_slp_North_Pacific_East frac=0.9935
+cyclone_dist_North_Pacific_East,STRUCTURAL,,,,,,,,,,,,,,forward-rolling leak: col[t] == max(col[t+1..t+7]) via cyclone_slp_North_Pacific_East frac=0.9902
+cyclone_dist_North_Sea,STRUCTURAL,,,,,,,,,,,,,,forward-rolling leak: col[t] == min(col[t+1..t+7]) via cyclone_wind_South_China_Sea frac=0.9916
+cyclone_slp_North_Pacific_East,STRUCTURAL,,,,,,,,,,,,,,forward-rolling leak: col[t] == min(col[t+1..t+7]) via cyclone_wind_South_China_Sea frac=0.9980
+cyclone_dist_North_Pacific_East,STRUCTURAL,,,,,,,,,,,,,,forward-rolling leak: col[t] == min(col[t+1..t+7]) via cyclone_wind_South_China_Sea frac=0.9947
+cyclone_slp_North_Pacific_East,STRUCTURAL,,,,,,,,,,,,,,forward-rolling leak: col[t] == min(col[t+1..t+7]) via cyclone_slp_South_China_Sea frac=0.9959
+cyclone_dist_North_Pacific_East,STRUCTURAL,,,,,,,,,,,,,,forward-rolling leak: col[t] == min(col[t+1..t+7]) via cyclone_slp_South_China_Sea frac=0.9926
+cyclone_wind_North_Sea,STRUCTURAL,,,,,,,,,,,,,,forward-rolling leak: col[t] == min(col[t+1..t+7]) via cyclone_dist_South_China_Sea frac=0.9912
+cyclone_slp_North_Sea,STRUCTURAL,,,,,,,,,,,,,,forward-rolling leak: col[t] == min(col[t+1..t+7]) via cyclone_dist_South_China_Sea frac=0.9912
+cyclone_dist_North_Sea,STRUCTURAL,,,,,,,,,,,,,,forward-rolling leak: col[t] == min(col[t+1..t+7]) via cyclone_dist_South_China_Sea frac=0.9928
+cyclone_slp_North_Pacific_East,STRUCTURAL,,,,,,,,,,,,,,forward-rolling leak: col[t] == min(col[t+1..t+7]) via cyclone_dist_South_China_Sea frac=0.9992
+cyclone_dist_North_Pacific_East,STRUCTURAL,,,,,,,,,,,,,,forward-rolling leak: col[t] == min(col[t+1..t+7]) via cyclone_dist_South_China_Sea frac=0.9959
+cyclone_dist_North_Sea,STRUCTURAL,,,,,,,,,,,,,,forward-rolling leak: col[t] == min(col[t+1..t+7]) via cyclone_wind_Arabian_Sea frac=0.9910
+cyclone_slp_North_Pacific_East,STRUCTURAL,,,,,,,,,,,,,,forward-rolling leak: col[t] == min(col[t+1..t+7]) via cyclone_wind_Arabian_Sea frac=0.9973
+cyclone_dist_North_Pacific_East,STRUCTURAL,,,,,,,,,,,,,,forward-rolling leak: col[t] == min(col[t+1..t+7]) via cyclone_wind_Arabian_Sea frac=0.9941
+cyclone_dist_North_Sea,STRUCTURAL,,,,,,,,,,,,,,forward-rolling leak: col[t] == min(col[t+1..t+7]) via cyclone_slp_Arabian_Sea frac=0.9910
+cyclone_slp_North_Pacific_East,STRUCTURAL,,,,,,,,,,,,,,forward-rolling leak: col[t] == min(col[t+1..t+7]) via cyclone_slp_Arabian_Sea frac=0.9973
+cyclone_dist_North_Pacific_East,STRUCTURAL,,,,,,,,,,,,,,forward-rolling leak: col[t] == min(col[t+1..t+7]) via cyclone_slp_Arabian_Sea frac=0.9941
+cyclone_dist_North_Sea,STRUCTURAL,,,,,,,,,,,,,,forward-rolling leak: col[t] == min(col[t+1..t+7]) via cyclone_dist_Arabian_Sea frac=0.9904
+cyclone_slp_North_Pacific_East,STRUCTURAL,,,,,,,,,,,,,,forward-rolling leak: col[t] == min(col[t+1..t+7]) via cyclone_dist_Arabian_Sea frac=0.9967
+cyclone_dist_North_Pacific_East,STRUCTURAL,,,,,,,,,,,,,,forward-rolling leak: col[t] == min(col[t+1..t+7]) via cyclone_dist_Arabian_Sea frac=0.9935
+cyclone_slp_North_Pacific_East,STRUCTURAL,,,,,,,,,,,,,,forward-rolling leak: col[t] == min(col[t+1..t+7]) via cyclone_dist_Mediterranean_Sea frac=0.9914
+cyclone_wind_North_Sea,STRUCTURAL,,,,,,,,,,,,,,forward-rolling leak: col[t] == min(col[t+1..t+7]) via cyclone_wind_North_Sea frac=0.9912
+cyclone_slp_North_Sea,STRUCTURAL,,,,,,,,,,,,,,forward-rolling leak: col[t] == min(col[t+1..t+7]) via cyclone_wind_North_Sea frac=0.9912
+cyclone_dist_North_Sea,STRUCTURAL,,,,,,,,,,,,,,forward-rolling leak: col[t] == min(col[t+1..t+7]) via cyclone_wind_North_Sea frac=0.9928
+cyclone_slp_North_Pacific_East,STRUCTURAL,,,,,,,,,,,,,,forward-rolling leak: col[t] == min(col[t+1..t+7]) via cyclone_wind_North_Sea frac=0.9992
+cyclone_dist_North_Pacific_East,STRUCTURAL,,,,,,,,,,,,,,forward-rolling leak: col[t] == min(col[t+1..t+7]) via cyclone_wind_North_Sea frac=0.9959
+cyclone_wind_North_Sea,STRUCTURAL,,,,,,,,,,,,,,forward-rolling leak: col[t] == min(col[t+1..t+7]) via cyclone_slp_North_Sea frac=0.9912
+cyclone_slp_North_Sea,STRUCTURAL,,,,,,,,,,,,,,forward-rolling leak: col[t] == min(col[t+1..t+7]) via cyclone_slp_North_Sea frac=0.9912
+cyclone_dist_North_Sea,STRUCTURAL,,,,,,,,,,,,,,forward-rolling leak: col[t] == min(col[t+1..t+7]) via cyclone_slp_North_Sea frac=0.9928
+cyclone_slp_North_Pacific_East,STRUCTURAL,,,,,,,,,,,,,,forward-rolling leak: col[t] == min(col[t+1..t+7]) via cyclone_slp_North_Sea frac=0.9992
+cyclone_dist_North_Pacific_East,STRUCTURAL,,,,,,,,,,,,,,forward-rolling leak: col[t] == min(col[t+1..t+7]) via cyclone_slp_North_Sea frac=0.9959
+cyclone_wind_North_Sea,STRUCTURAL,,,,,,,,,,,,,,forward-rolling leak: col[t] == min(col[t+1..t+7]) via cyclone_dist_North_Sea frac=0.9912
+cyclone_slp_North_Sea,STRUCTURAL,,,,,,,,,,,,,,forward-rolling leak: col[t] == min(col[t+1..t+7]) via cyclone_dist_North_Sea frac=0.9912
+cyclone_dist_North_Sea,STRUCTURAL,,,,,,,,,,,,,,forward-rolling leak: col[t] == min(col[t+1..t+7]) via cyclone_dist_North_Sea frac=0.9928
+cyclone_slp_North_Pacific_East,STRUCTURAL,,,,,,,,,,,,,,forward-rolling leak: col[t] == min(col[t+1..t+7]) via cyclone_dist_North_Sea frac=0.9992
+cyclone_dist_North_Pacific_East,STRUCTURAL,,,,,,,,,,,,,,forward-rolling leak: col[t] == min(col[t+1..t+7]) via cyclone_dist_North_Sea frac=0.9959
+cyclone_slp_North_Pacific_East,STRUCTURAL,,,,,,,,,,,,,,forward-rolling leak: col[t] == min(col[t+1..t+7]) via cyclone_wind_North_Pacific_West frac=0.9920
+cyclone_wind_North_Sea,STRUCTURAL,,,,,,,,,,,,,,forward-rolling leak: col[t] == min(col[t+1..t+7]) via cyclone_slp_North_Pacific_East frac=0.9912
+cyclone_slp_North_Sea,STRUCTURAL,,,,,,,,,,,,,,forward-rolling leak: col[t] == min(col[t+1..t+7]) via cyclone_slp_North_Pacific_East frac=0.9912
+cyclone_dist_North_Sea,STRUCTURAL,,,,,,,,,,,,,,forward-rolling leak: col[t] == min(col[t+1..t+7]) via cyclone_slp_North_Pacific_East frac=0.9928
+cyclone_slp_North_Pacific_East,STRUCTURAL,,,,,,,,,,,,,,forward-rolling leak: col[t] == min(col[t+1..t+7]) via cyclone_slp_North_Pacific_East frac=0.9992
+cyclone_dist_North_Pacific_East,STRUCTURAL,,,,,,,,,,,,,,forward-rolling leak: col[t] == min(col[t+1..t+7]) via cyclone_slp_North_Pacific_East frac=0.9959
+cyclone_wind_North_Sea,STRUCTURAL,,,,,,,,,,,,,,forward-rolling leak: col[t] == min(col[t+1..t+7]) via cyclone_dist_North_Pacific_East frac=0.9912
+cyclone_slp_North_Sea,STRUCTURAL,,,,,,,,,,,,,,forward-rolling leak: col[t] == min(col[t+1..t+7]) via cyclone_dist_North_Pacific_East frac=0.9912
+cyclone_dist_North_Sea,STRUCTURAL,,,,,,,,,,,,,,forward-rolling leak: col[t] == min(col[t+1..t+7]) via cyclone_dist_North_Pacific_East frac=0.9928
+cyclone_slp_North_Pacific_East,STRUCTURAL,,,,,,,,,,,,,,forward-rolling leak: col[t] == min(col[t+1..t+7]) via cyclone_dist_North_Pacific_East frac=0.9992
+cyclone_dist_North_Pacific_East,STRUCTURAL,,,,,,,,,,,,,,forward-rolling leak: col[t] == min(col[t+1..t+7]) via cyclone_dist_North_Pacific_East frac=0.9959
+cyclone_slp_North_Pacific_East,STRUCTURAL,,,,,,,,,,,,,,forward-rolling leak: col[t] == sum(col[t+1..t+7]) via cyclone_slp_North_Pacific_East frac=0.9935
+cyclone_dist_North_Pacific_East,STRUCTURAL,,,,,,,,,,,,,,forward-rolling leak: col[t] == sum(col[t+1..t+7]) via cyclone_slp_North_Pacific_East frac=0.9902
+Cyclone_Wind_Forecast3d,BANNED,,,,,,,,,,,,,,BANNED - CONFIRMED forward-looking; contemp corr with log_rv_fwd=-0.014; Cyclone_Wind_Forecast3d(t) == Cyclone_Wind_Forecast7d(t+4) exactly over 9772 rows
+Cyclone_Wind_Forecast7d,BANNED,,,,,,,,,,,,,,BANNED - conservative (not proven forward-looking); contemp corr with log_rv_fwd=0.006; no exact forward-shift match found
+Cyclone_Active_Forecast3d,BANNED,,,,,,,,,,,,,,BANNED - conservative (not proven forward-looking); contemp corr with log_rv_fwd=-0.008; no exact forward-shift match found
+Wind_Speed_Forecast7d,BANNED,,,,,,,,,,,,,,BANNED - conservative (not proven forward-looking); contemp corr with log_rv_fwd=-0.028; no exact forward-shift match found
+Rolling_7d_Cyclone_Days,BANNED,,,,,,,,,,,,,,BANNED - conservative (not proven forward-looking); contemp corr with log_rv_fwd=0.016; no exact forward-shift match found
+Price_Volatility_7d,BANNED,,,,,,,,,,,,,,BANNED - conservative (not proven forward-looking); contemp corr with log_rv_fwd=0.156; no exact forward-shift match found
+Price_Volatility_30d,BANNED,,,,,,,,,,,,,,BANNED - conservative (not proven forward-looking); contemp corr with log_rv_fwd=0.253; no exact forward-shift match found
+__split__,STRUCTURAL,,,,,,,,,,,,,,test rows dated before fold origin=0; train rows whose target window reaches >=origin=1500; train dates also in test=0

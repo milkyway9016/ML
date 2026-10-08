@@ -1,0 +1,1183 @@
+{
+  "full_population_rows": 9800,
+  "full_population_nan_pattern_mismatch": 0,
+  "full_population_value_mismatch": 0,
+  "sample_n": 200,
+  "sample_mismatches": 0,
+  "sample_max_abs_diff": 1.2486539580081057e-14,
+  "log_target_mismatch_rows": 0,
+  "log_target_max_abs_diff": 3.4718894426077895e-12,
+  "exact_zero_rv_rows": 66,
+  "exact_zero_rv_by_route_year": {
+    "XSICFENE_FarEast_NorthEurope|2015": 1,
+    "XSICFEUW_FarEast_USWestCoast|2018": 25,
+    "XSICFEUW_FarEast_USWestCoast|2019": 3,
+    "XSICFEUW_FarEast_USWestCoast|2020": 1,
+    "XSICFEUW_FarEast_USWestCoast|2021": 1,
+    "XSICFEUW_FarEast_USWestCoast|2026": 2,
+    "XSICNEFE_NorthEurope_FarEast|2015": 1,
+    "XSICUWFE_USWestCoast_FarEast|2018": 25,
+    "XSICUWFE_USWestCoast_FarEast|2019": 3,
+    "XSICUWFE_USWestCoast_FarEast|2020": 1,
+    "XSICUWFE_USWestCoast_FarEast|2021": 1,
+    "XSICUWFE_USWestCoast_FarEast|2026": 2
+  },
+  "rows_below_RV_FLOOR": 66,
+  "fingerprint_row": 1400,
+  "fingerprint_changed_positions_relative": [
+    -5,
+    -4,
+    -3,
+    -2,
+    -1
+  ],
+  "fingerprint_own_row_changed": false,
+  "fingerprint_expected_relative": [
+    -5,
+    -4,
+    -3,
+    -2,
+    -1
+  ],
+  "sqret_perturb_rows_tested": 400,
+  "sqret_perturb_rows_finite": 400,
+  "sqret_perturb_own_row_rv_changes": 0,
+  "sqret_perturb_design": "isolated: perturbed rows spaced > HORIZON apart",
+  "single_route_dense_changed": 212,
+  "single_route_dense_all_explained_by_window_collision": true,
+  "power_check_own_row_of_t_plus_1_moved": true,
+  "scale_invariance_rows_changed": 0,
+  "target_rederivation_matched": true,
+  "train_rows_target_crossing_origin": 1500,
+  "leakage": {
+    "exact_forward_shift_matches": [
+      {
+        "test": "col[t] == col.shift(-1)[t]",
+        "column_a": "Origin_LSCI",
+        "column_b": "Origin_LSCI",
+        "lag": 1,
+        "frac_equal": 0.990404246631278,
+        "n_compared": 9796
+      },
+      {
+        "test": "col[t] == col.shift(-1)[t]",
+        "column_a": "Dest_LSCI",
+        "column_b": "Dest_LSCI",
+        "lag": 1,
+        "frac_equal": 0.990404246631278,
+        "n_compared": 9796
+      },
+      {
+        "test": "col[t] == col.shift(-1)[t]",
+        "column_a": "Route_Mean_LSCI",
+        "column_b": "Route_Mean_LSCI",
+        "lag": 1,
+        "frac_equal": 0.990404246631278,
+        "n_compared": 9796
+      },
+      {
+        "test": "col[t] == col.shift(-1)[t]",
+        "column_a": "cyclone_slp_North_Pacific_East",
+        "column_b": "cyclone_wind_North_Sea",
+        "lag": 1,
+        "frac_equal": 0.990404246631278,
+        "n_compared": 9796
+      },
+      {
+        "test": "col[t] == col.shift(-1)[t]",
+        "column_a": "cyclone_slp_North_Pacific_East",
+        "column_b": "cyclone_slp_North_Sea",
+        "lag": 1,
+        "frac_equal": 0.990404246631278,
+        "n_compared": 9796
+      },
+      {
+        "test": "col[t] == col.shift(-1)[t]",
+        "column_a": "cyclone_slp_North_Pacific_East",
+        "column_b": "cyclone_dist_North_Sea",
+        "lag": 1,
+        "frac_equal": 0.9920375663536137,
+        "n_compared": 9796
+      },
+      {
+        "test": "col[t] == col.shift(-1)[t]",
+        "column_a": "cyclone_wind_North_Sea",
+        "column_b": "cyclone_slp_North_Pacific_East",
+        "lag": 1,
+        "frac_equal": 0.990404246631278,
+        "n_compared": 9796
+      },
+      {
+        "test": "col[t] == col.shift(-1)[t]",
+        "column_a": "cyclone_slp_North_Sea",
+        "column_b": "cyclone_slp_North_Pacific_East",
+        "lag": 1,
+        "frac_equal": 0.990404246631278,
+        "n_compared": 9796
+      },
+      {
+        "test": "col[t] == col.shift(-1)[t]",
+        "column_a": "cyclone_dist_North_Sea",
+        "column_b": "cyclone_slp_North_Pacific_East",
+        "lag": 1,
+        "frac_equal": 0.9920375663536137,
+        "n_compared": 9796
+      },
+      {
+        "test": "col[t] == col.shift(-1)[t]",
+        "column_a": "cyclone_slp_North_Pacific_East",
+        "column_b": "cyclone_slp_North_Pacific_East",
+        "lag": 1,
+        "frac_equal": 0.9983666802776644,
+        "n_compared": 9796
+      },
+      {
+        "test": "col[t] == col.shift(-1)[t]",
+        "column_a": "cyclone_dist_North_Pacific_East",
+        "column_b": "cyclone_slp_North_Pacific_East",
+        "lag": 1,
+        "frac_equal": 0.9951000408329931,
+        "n_compared": 9796
+      },
+      {
+        "test": "col[t] == col.shift(-1)[t]",
+        "column_a": "cyclone_slp_North_Pacific_East",
+        "column_b": "cyclone_dist_North_Pacific_East",
+        "lag": 1,
+        "frac_equal": 0.9951000408329931,
+        "n_compared": 9796
+      },
+      {
+        "test": "col[t] == col.shift(-1)[t]",
+        "column_a": "cyclone_dist_North_Pacific_East",
+        "column_b": "cyclone_dist_North_Pacific_East",
+        "lag": 1,
+        "frac_equal": 0.9924458962841977,
+        "n_compared": 9796
+      },
+      {
+        "test": "col[t] == col.shift(-2)[t]",
+        "column_a": "cyclone_slp_North_Pacific_East",
+        "column_b": "cyclone_wind_North_Sea",
+        "lag": 2,
+        "frac_equal": 0.9904003267973857,
+        "n_compared": 9792
+      },
+      {
+        "test": "col[t] == col.shift(-2)[t]",
+        "column_a": "cyclone_slp_North_Pacific_East",
+        "column_b": "cyclone_slp_North_Sea",
+        "lag": 2,
+        "frac_equal": 0.9904003267973857,
+        "n_compared": 9792
+      },
+      {
+        "test": "col[t] == col.shift(-2)[t]",
+        "column_a": "cyclone_slp_North_Pacific_East",
+        "column_b": "cyclone_dist_North_Sea",
+        "lag": 2,
+        "frac_equal": 0.9920343137254902,
+        "n_compared": 9792
+      },
+      {
+        "test": "col[t] == col.shift(-2)[t]",
+        "column_a": "cyclone_wind_North_Sea",
+        "column_b": "cyclone_slp_North_Pacific_East",
+        "lag": 2,
+        "frac_equal": 0.9904003267973857,
+        "n_compared": 9792
+      },
+      {
+        "test": "col[t] == col.shift(-2)[t]",
+        "column_a": "cyclone_slp_North_Sea",
+        "column_b": "cyclone_slp_North_Pacific_East",
+        "lag": 2,
+        "frac_equal": 0.9904003267973857,
+        "n_compared": 9792
+      },
+      {
+        "test": "col[t] == col.shift(-2)[t]",
+        "column_a": "cyclone_dist_North_Sea",
+        "column_b": "cyclone_slp_North_Pacific_East",
+        "lag": 2,
+        "frac_equal": 0.9920343137254902,
+        "n_compared": 9792
+      },
+      {
+        "test": "col[t] == col.shift(-2)[t]",
+        "column_a": "cyclone_slp_North_Pacific_East",
+        "column_b": "cyclone_slp_North_Pacific_East",
+        "lag": 2,
+        "frac_equal": 0.9983660130718954,
+        "n_compared": 9792
+      },
+      {
+        "test": "col[t] == col.shift(-2)[t]",
+        "column_a": "cyclone_dist_North_Pacific_East",
+        "column_b": "cyclone_slp_North_Pacific_East",
+        "lag": 2,
+        "frac_equal": 0.9950980392156863,
+        "n_compared": 9792
+      },
+      {
+        "test": "col[t] == col.shift(-2)[t]",
+        "column_a": "cyclone_slp_North_Pacific_East",
+        "column_b": "cyclone_dist_North_Pacific_East",
+        "lag": 2,
+        "frac_equal": 0.9950980392156863,
+        "n_compared": 9792
+      },
+      {
+        "test": "col[t] == col.shift(-2)[t]",
+        "column_a": "cyclone_dist_North_Pacific_East",
+        "column_b": "cyclone_dist_North_Pacific_East",
+        "lag": 2,
+        "frac_equal": 0.9920343137254902,
+        "n_compared": 9792
+      },
+      {
+        "test": "col[t] == col.shift(-3)[t]",
+        "column_a": "cyclone_slp_North_Pacific_East",
+        "column_b": "cyclone_wind_North_Sea",
+        "lag": 3,
+        "frac_equal": 0.9903964037597057,
+        "n_compared": 9788
+      },
+      {
+        "test": "col[t] == col.shift(-3)[t]",
+        "column_a": "cyclone_slp_North_Pacific_East",
+        "column_b": "cyclone_slp_North_Sea",
+        "lag": 3,
+        "frac_equal": 0.9903964037597057,
+        "n_compared": 9788
+      },
+      {
+        "test": "col[t] == col.shift(-3)[t]",
+        "column_a": "cyclone_slp_North_Pacific_East",
+        "column_b": "cyclone_dist_North_Sea",
+        "lag": 3,
+        "frac_equal": 0.9920310584389048,
+        "n_compared": 9788
+      },
+      {
+        "test": "col[t] == col.shift(-3)[t]",
+        "column_a": "Cyclone_Wind_Forecast3d",
+        "column_b": "Route_Max_cyclone_wind",
+        "lag": 3,
+        "frac_equal": 1.0,
+        "n_compared": 9788
+      },
+      {
+        "test": "col[t] == col.shift(-3)[t]",
+        "column_a": "cyclone_wind_North_Sea",
+        "column_b": "cyclone_slp_North_Pacific_East",
+        "lag": 3,
+        "frac_equal": 0.9903964037597057,
+        "n_compared": 9788
+      },
+      {
+        "test": "col[t] == col.shift(-3)[t]",
+        "column_a": "cyclone_slp_North_Sea",
+        "column_b": "cyclone_slp_North_Pacific_East",
+        "lag": 3,
+        "frac_equal": 0.9903964037597057,
+        "n_compared": 9788
+      },
+      {
+        "test": "col[t] == col.shift(-3)[t]",
+        "column_a": "cyclone_dist_North_Sea",
+        "column_b": "cyclone_slp_North_Pacific_East",
+        "lag": 3,
+        "frac_equal": 0.9920310584389048,
+        "n_compared": 9788
+      },
+      {
+        "test": "col[t] == col.shift(-3)[t]",
+        "column_a": "cyclone_slp_North_Pacific_East",
+        "column_b": "cyclone_slp_North_Pacific_East",
+        "lag": 3,
+        "frac_equal": 0.998365345320801,
+        "n_compared": 9788
+      },
+      {
+        "test": "col[t] == col.shift(-3)[t]",
+        "column_a": "cyclone_dist_North_Pacific_East",
+        "column_b": "cyclone_slp_North_Pacific_East",
+        "lag": 3,
+        "frac_equal": 0.9950960359624029,
+        "n_compared": 9788
+      },
+      {
+        "test": "col[t] == col.shift(-3)[t]",
+        "column_a": "cyclone_slp_North_Pacific_East",
+        "column_b": "cyclone_dist_North_Pacific_East",
+        "lag": 3,
+        "frac_equal": 0.9950960359624029,
+        "n_compared": 9788
+      },
+      {
+        "test": "col[t] == col.shift(-3)[t]",
+        "column_a": "cyclone_dist_North_Pacific_East",
+        "column_b": "cyclone_dist_North_Pacific_East",
+        "lag": 3,
+        "frac_equal": 0.991826726604005,
+        "n_compared": 9788
+      },
+      {
+        "test": "col[t] == col.shift(-4)[t]",
+        "column_a": "cyclone_slp_North_Pacific_East",
+        "column_b": "cyclone_wind_North_Sea",
+        "lag": 4,
+        "frac_equal": 0.990392477514309,
+        "n_compared": 9784
+      },
+      {
+        "test": "col[t] == col.shift(-4)[t]",
+        "column_a": "cyclone_slp_North_Pacific_East",
+        "column_b": "cyclone_slp_North_Sea",
+        "lag": 4,
+        "frac_equal": 0.990392477514309,
+        "n_compared": 9784
+      },
+      {
+        "test": "col[t] == col.shift(-4)[t]",
+        "column_a": "cyclone_slp_North_Pacific_East",
+        "column_b": "cyclone_dist_North_Sea",
+        "lag": 4,
+        "frac_equal": 0.9920278004905969,
+        "n_compared": 9784
+      },
+      {
+        "test": "col[t] == col.shift(-4)[t]",
+        "column_a": "cyclone_wind_North_Sea",
+        "column_b": "cyclone_slp_North_Pacific_East",
+        "lag": 4,
+        "frac_equal": 0.990392477514309,
+        "n_compared": 9784
+      },
+      {
+        "test": "col[t] == col.shift(-4)[t]",
+        "column_a": "cyclone_slp_North_Sea",
+        "column_b": "cyclone_slp_North_Pacific_East",
+        "lag": 4,
+        "frac_equal": 0.990392477514309,
+        "n_compared": 9784
+      },
+      {
+        "test": "col[t] == col.shift(-4)[t]",
+        "column_a": "cyclone_dist_North_Sea",
+        "column_b": "cyclone_slp_North_Pacific_East",
+        "lag": 4,
+        "frac_equal": 0.9920278004905969,
+        "n_compared": 9784
+      },
+      {
+        "test": "col[t] == col.shift(-4)[t]",
+        "column_a": "cyclone_slp_North_Pacific_East",
+        "column_b": "cyclone_slp_North_Pacific_East",
+        "lag": 4,
+        "frac_equal": 0.9983646770237122,
+        "n_compared": 9784
+      },
+      {
+        "test": "col[t] == col.shift(-4)[t]",
+        "column_a": "cyclone_dist_North_Pacific_East",
+        "column_b": "cyclone_slp_North_Pacific_East",
+        "lag": 4,
+        "frac_equal": 0.9950940310711366,
+        "n_compared": 9784
+      },
+      {
+        "test": "col[t] == col.shift(-4)[t]",
+        "column_a": "cyclone_slp_North_Pacific_East",
+        "column_b": "cyclone_dist_North_Pacific_East",
+        "lag": 4,
+        "frac_equal": 0.9950940310711366,
+        "n_compared": 9784
+      },
+      {
+        "test": "col[t] == col.shift(-4)[t]",
+        "column_a": "cyclone_dist_North_Pacific_East",
+        "column_b": "cyclone_dist_North_Pacific_East",
+        "lag": 4,
+        "frac_equal": 0.9918233851185609,
+        "n_compared": 9784
+      },
+      {
+        "test": "col[t] == col.shift(-4)[t]",
+        "column_a": "Cyclone_Wind_Forecast7d",
+        "column_b": "Cyclone_Wind_Forecast3d",
+        "lag": 4,
+        "frac_equal": 1.0,
+        "n_compared": 9772
+      },
+      {
+        "test": "col[t] == col.shift(-5)[t]",
+        "column_a": "cyclone_slp_North_Pacific_East",
+        "column_b": "cyclone_wind_North_Sea",
+        "lag": 5,
+        "frac_equal": 0.9903885480572597,
+        "n_compared": 9780
+      },
+      {
+        "test": "col[t] == col.shift(-5)[t]",
+        "column_a": "cyclone_slp_North_Pacific_East",
+        "column_b": "cyclone_slp_North_Sea",
+        "lag": 5,
+        "frac_equal": 0.9903885480572597,
+        "n_compared": 9780
+      },
+      {
+        "test": "col[t] == col.shift(-5)[t]",
+        "column_a": "cyclone_slp_North_Pacific_East",
+        "column_b": "cyclone_dist_North_Sea",
+        "lag": 5,
+        "frac_equal": 0.9920245398773007,
+        "n_compared": 9780
+      },
+      {
+        "test": "col[t] == col.shift(-5)[t]",
+        "column_a": "cyclone_wind_North_Sea",
+        "column_b": "cyclone_slp_North_Pacific_East",
+        "lag": 5,
+        "frac_equal": 0.9903885480572597,
+        "n_compared": 9780
+      },
+      {
+        "test": "col[t] == col.shift(-5)[t]",
+        "column_a": "cyclone_slp_North_Sea",
+        "column_b": "cyclone_slp_North_Pacific_East",
+        "lag": 5,
+        "frac_equal": 0.9903885480572597,
+        "n_compared": 9780
+      },
+      {
+        "test": "col[t] == col.shift(-5)[t]",
+        "column_a": "cyclone_dist_North_Sea",
+        "column_b": "cyclone_slp_North_Pacific_East",
+        "lag": 5,
+        "frac_equal": 0.9920245398773007,
+        "n_compared": 9780
+      },
+      {
+        "test": "col[t] == col.shift(-5)[t]",
+        "column_a": "cyclone_slp_North_Pacific_East",
+        "column_b": "cyclone_slp_North_Pacific_East",
+        "lag": 5,
+        "frac_equal": 0.9983640081799591,
+        "n_compared": 9780
+      },
+      {
+        "test": "col[t] == col.shift(-5)[t]",
+        "column_a": "cyclone_dist_North_Pacific_East",
+        "column_b": "cyclone_slp_North_Pacific_East",
+        "lag": 5,
+        "frac_equal": 0.9950920245398773,
+        "n_compared": 9780
+      },
+      {
+        "test": "col[t] == col.shift(-5)[t]",
+        "column_a": "cyclone_slp_North_Pacific_East",
+        "column_b": "cyclone_dist_North_Pacific_East",
+        "lag": 5,
+        "frac_equal": 0.9950920245398773,
+        "n_compared": 9780
+      },
+      {
+        "test": "col[t] == col.shift(-5)[t]",
+        "column_a": "cyclone_dist_North_Pacific_East",
+        "column_b": "cyclone_dist_North_Pacific_East",
+        "lag": 5,
+        "frac_equal": 0.9920245398773007,
+        "n_compared": 9780
+      },
+      {
+        "test": "col[t] == col.shift(-6)[t]",
+        "column_a": "cyclone_slp_North_Pacific_East",
+        "column_b": "cyclone_wind_North_Sea",
+        "lag": 6,
+        "frac_equal": 0.9903846153846154,
+        "n_compared": 9776
+      },
+      {
+        "test": "col[t] == col.shift(-6)[t]",
+        "column_a": "cyclone_slp_North_Pacific_East",
+        "column_b": "cyclone_slp_North_Sea",
+        "lag": 6,
+        "frac_equal": 0.9903846153846154,
+        "n_compared": 9776
+      },
+      {
+        "test": "col[t] == col.shift(-6)[t]",
+        "column_a": "cyclone_slp_North_Pacific_East",
+        "column_b": "cyclone_dist_North_Sea",
+        "lag": 6,
+        "frac_equal": 0.9920212765957447,
+        "n_compared": 9776
+      },
+      {
+        "test": "col[t] == col.shift(-6)[t]",
+        "column_a": "cyclone_wind_North_Sea",
+        "column_b": "cyclone_slp_North_Pacific_East",
+        "lag": 6,
+        "frac_equal": 0.9903846153846154,
+        "n_compared": 9776
+      },
+      {
+        "test": "col[t] == col.shift(-6)[t]",
+        "column_a": "cyclone_slp_North_Sea",
+        "column_b": "cyclone_slp_North_Pacific_East",
+        "lag": 6,
+        "frac_equal": 0.9903846153846154,
+        "n_compared": 9776
+      },
+      {
+        "test": "col[t] == col.shift(-6)[t]",
+        "column_a": "cyclone_dist_North_Sea",
+        "column_b": "cyclone_slp_North_Pacific_East",
+        "lag": 6,
+        "frac_equal": 0.9920212765957447,
+        "n_compared": 9776
+      },
+      {
+        "test": "col[t] == col.shift(-6)[t]",
+        "column_a": "cyclone_slp_North_Pacific_East",
+        "column_b": "cyclone_slp_North_Pacific_East",
+        "lag": 6,
+        "frac_equal": 0.9983633387888707,
+        "n_compared": 9776
+      },
+      {
+        "test": "col[t] == col.shift(-6)[t]",
+        "column_a": "cyclone_dist_North_Pacific_East",
+        "column_b": "cyclone_slp_North_Pacific_East",
+        "lag": 6,
+        "frac_equal": 0.9950900163666121,
+        "n_compared": 9776
+      },
+      {
+        "test": "col[t] == col.shift(-6)[t]",
+        "column_a": "cyclone_slp_North_Pacific_East",
+        "column_b": "cyclone_dist_North_Pacific_East",
+        "lag": 6,
+        "frac_equal": 0.9950900163666121,
+        "n_compared": 9776
+      },
+      {
+        "test": "col[t] == col.shift(-6)[t]",
+        "column_a": "cyclone_dist_North_Pacific_East",
+        "column_b": "cyclone_dist_North_Pacific_East",
+        "lag": 6,
+        "frac_equal": 0.9918166939443536,
+        "n_compared": 9776
+      },
+      {
+        "test": "col[t] == col.shift(-7)[t]",
+        "column_a": "Wind_Speed_Forecast7d",
+        "column_b": "Route_Mean_wind_speed",
+        "lag": 7,
+        "frac_equal": 1.0,
+        "n_compared": 9488
+      },
+      {
+        "test": "col[t] == col.shift(-7)[t]",
+        "column_a": "cyclone_slp_North_Pacific_East",
+        "column_b": "cyclone_wind_North_Sea",
+        "lag": 7,
+        "frac_equal": 0.9903806794924274,
+        "n_compared": 9772
+      },
+      {
+        "test": "col[t] == col.shift(-7)[t]",
+        "column_a": "cyclone_slp_North_Pacific_East",
+        "column_b": "cyclone_slp_North_Sea",
+        "lag": 7,
+        "frac_equal": 0.9903806794924274,
+        "n_compared": 9772
+      },
+      {
+        "test": "col[t] == col.shift(-7)[t]",
+        "column_a": "cyclone_slp_North_Pacific_East",
+        "column_b": "cyclone_dist_North_Sea",
+        "lag": 7,
+        "frac_equal": 0.9920180106426525,
+        "n_compared": 9772
+      },
+      {
+        "test": "col[t] == col.shift(-7)[t]",
+        "column_a": "Cyclone_Wind_Forecast7d",
+        "column_b": "Route_Max_cyclone_wind",
+        "lag": 7,
+        "frac_equal": 1.0,
+        "n_compared": 9772
+      },
+      {
+        "test": "col[t] == col.shift(-7)[t]",
+        "column_a": "cyclone_wind_North_Sea",
+        "column_b": "cyclone_slp_North_Pacific_East",
+        "lag": 7,
+        "frac_equal": 0.9903806794924274,
+        "n_compared": 9772
+      },
+      {
+        "test": "col[t] == col.shift(-7)[t]",
+        "column_a": "cyclone_slp_North_Sea",
+        "column_b": "cyclone_slp_North_Pacific_East",
+        "lag": 7,
+        "frac_equal": 0.9903806794924274,
+        "n_compared": 9772
+      },
+      {
+        "test": "col[t] == col.shift(-7)[t]",
+        "column_a": "cyclone_dist_North_Sea",
+        "column_b": "cyclone_slp_North_Pacific_East",
+        "lag": 7,
+        "frac_equal": 0.9920180106426525,
+        "n_compared": 9772
+      },
+      {
+        "test": "col[t] == col.shift(-7)[t]",
+        "column_a": "cyclone_slp_North_Pacific_East",
+        "column_b": "cyclone_slp_North_Pacific_East",
+        "lag": 7,
+        "frac_equal": 0.9983626688497749,
+        "n_compared": 9772
+      },
+      {
+        "test": "col[t] == col.shift(-7)[t]",
+        "column_a": "cyclone_dist_North_Pacific_East",
+        "column_b": "cyclone_slp_North_Pacific_East",
+        "lag": 7,
+        "frac_equal": 0.9950880065493246,
+        "n_compared": 9772
+      },
+      {
+        "test": "col[t] == col.shift(-7)[t]",
+        "column_a": "cyclone_slp_North_Pacific_East",
+        "column_b": "cyclone_dist_North_Pacific_East",
+        "lag": 7,
+        "frac_equal": 0.9950880065493246,
+        "n_compared": 9772
+      },
+      {
+        "test": "col[t] == col.shift(-7)[t]",
+        "column_a": "cyclone_dist_North_Pacific_East",
+        "column_b": "cyclone_dist_North_Pacific_East",
+        "lag": 7,
+        "frac_equal": 0.9918133442488744,
+        "n_compared": 9772
+      },
+      {
+        "test": "col[t] == col.shift(-7)[t]",
+        "column_a": "Price_USD",
+        "column_b": "Price_Lag_7d",
+        "lag": 7,
+        "frac_equal": 1.0,
+        "n_compared": 9772
+      },
+      {
+        "test": "col[t] == col.shift(-7)[t]",
+        "column_a": "Route_Max_cyclone_wind",
+        "column_b": "Cyclone_Wind_Lag7d",
+        "lag": 7,
+        "frac_equal": 1.0,
+        "n_compared": 9772
+      },
+      {
+        "test": "col[t] == col.shift(-7)[t]",
+        "column_a": "Cyclone_Wind_Lag7d",
+        "column_b": "Cyclone_Wind_Lag14d",
+        "lag": 7,
+        "frac_equal": 1.0,
+        "n_compared": 9744
+      },
+      {
+        "test": "col[t] == col.shift(-7)[t]",
+        "column_a": "Route_Mean_wind_speed",
+        "column_b": "Wind_Speed_Lag7d",
+        "lag": 7,
+        "frac_equal": 1.0,
+        "n_compared": 9516
+      },
+      {
+        "test": "col[t] == col.shift(-7)[t]",
+        "column_a": "Wind_Speed_Lag7d",
+        "column_b": "Wind_Speed_Lag14d",
+        "lag": 7,
+        "frac_equal": 1.0,
+        "n_compared": 9516
+      }
+    ],
+    "n_exact_forward_shift_matches": 82,
+    "exact_forward_rolling_matches": [
+      {
+        "test": "col[t] == mean(col[t+1..t+3])",
+        "column_a": "cyclone_dist_North_Sea",
+        "column_b": "cyclone_slp_North_Pacific_East",
+        "frac_equal": 0.9903983656792645,
+        "n_compared": 9790
+      },
+      {
+        "test": "col[t] == mean(col[t+1..t+3])",
+        "column_a": "cyclone_slp_North_Pacific_East",
+        "column_b": "cyclone_slp_North_Pacific_East",
+        "frac_equal": 0.9967313585291113,
+        "n_compared": 9790
+      },
+      {
+        "test": "col[t] == mean(col[t+1..t+3])",
+        "column_a": "cyclone_dist_North_Pacific_East",
+        "column_b": "cyclone_slp_North_Pacific_East",
+        "frac_equal": 0.9934627170582226,
+        "n_compared": 9790
+      },
+      {
+        "test": "col[t] == max(col[t+1..t+3])",
+        "column_a": "cyclone_dist_North_Sea",
+        "column_b": "cyclone_slp_North_Pacific_East",
+        "frac_equal": 0.9903983656792645,
+        "n_compared": 9790
+      },
+      {
+        "test": "col[t] == max(col[t+1..t+3])",
+        "column_a": "cyclone_slp_North_Pacific_East",
+        "column_b": "cyclone_slp_North_Pacific_East",
+        "frac_equal": 0.9967313585291113,
+        "n_compared": 9790
+      },
+      {
+        "test": "col[t] == max(col[t+1..t+3])",
+        "column_a": "cyclone_dist_North_Pacific_East",
+        "column_b": "cyclone_slp_North_Pacific_East",
+        "frac_equal": 0.9934627170582226,
+        "n_compared": 9790
+      },
+      {
+        "test": "col[t] == min(col[t+1..t+3])",
+        "column_a": "cyclone_wind_North_Sea",
+        "column_b": "cyclone_wind_North_Sea",
+        "frac_equal": 0.9906026557711951,
+        "n_compared": 9790
+      },
+      {
+        "test": "col[t] == min(col[t+1..t+3])",
+        "column_a": "cyclone_slp_North_Sea",
+        "column_b": "cyclone_wind_North_Sea",
+        "frac_equal": 0.9906026557711951,
+        "n_compared": 9790
+      },
+      {
+        "test": "col[t] == min(col[t+1..t+3])",
+        "column_a": "cyclone_dist_North_Sea",
+        "column_b": "cyclone_wind_North_Sea",
+        "frac_equal": 0.9922369765066394,
+        "n_compared": 9790
+      },
+      {
+        "test": "col[t] == min(col[t+1..t+3])",
+        "column_a": "cyclone_slp_North_Pacific_East",
+        "column_b": "cyclone_wind_North_Sea",
+        "frac_equal": 0.9985699693564862,
+        "n_compared": 9790
+      },
+      {
+        "test": "col[t] == min(col[t+1..t+3])",
+        "column_a": "cyclone_dist_North_Pacific_East",
+        "column_b": "cyclone_wind_North_Sea",
+        "frac_equal": 0.9953013278855976,
+        "n_compared": 9790
+      },
+      {
+        "test": "col[t] == min(col[t+1..t+3])",
+        "column_a": "cyclone_wind_North_Sea",
+        "column_b": "cyclone_slp_North_Sea",
+        "frac_equal": 0.9906026557711951,
+        "n_compared": 9790
+      },
+      {
+        "test": "col[t] == min(col[t+1..t+3])",
+        "column_a": "cyclone_slp_North_Sea",
+        "column_b": "cyclone_slp_North_Sea",
+        "frac_equal": 0.9906026557711951,
+        "n_compared": 9790
+      },
+      {
+        "test": "col[t] == min(col[t+1..t+3])",
+        "column_a": "cyclone_dist_North_Sea",
+        "column_b": "cyclone_slp_North_Sea",
+        "frac_equal": 0.9922369765066394,
+        "n_compared": 9790
+      },
+      {
+        "test": "col[t] == min(col[t+1..t+3])",
+        "column_a": "cyclone_slp_North_Pacific_East",
+        "column_b": "cyclone_slp_North_Sea",
+        "frac_equal": 0.9985699693564862,
+        "n_compared": 9790
+      },
+      {
+        "test": "col[t] == min(col[t+1..t+3])",
+        "column_a": "cyclone_dist_North_Pacific_East",
+        "column_b": "cyclone_slp_North_Sea",
+        "frac_equal": 0.9953013278855976,
+        "n_compared": 9790
+      },
+      {
+        "test": "col[t] == min(col[t+1..t+3])",
+        "column_a": "cyclone_wind_North_Sea",
+        "column_b": "cyclone_dist_North_Sea",
+        "frac_equal": 0.9906026557711951,
+        "n_compared": 9790
+      },
+      {
+        "test": "col[t] == min(col[t+1..t+3])",
+        "column_a": "cyclone_slp_North_Sea",
+        "column_b": "cyclone_dist_North_Sea",
+        "frac_equal": 0.9906026557711951,
+        "n_compared": 9790
+      },
+      {
+        "test": "col[t] == min(col[t+1..t+3])",
+        "column_a": "cyclone_dist_North_Sea",
+        "column_b": "cyclone_dist_North_Sea",
+        "frac_equal": 0.9922369765066394,
+        "n_compared": 9790
+      },
+      {
+        "test": "col[t] == min(col[t+1..t+3])",
+        "column_a": "cyclone_slp_North_Pacific_East",
+        "column_b": "cyclone_dist_North_Sea",
+        "frac_equal": 0.9985699693564862,
+        "n_compared": 9790
+      },
+      {
+        "test": "col[t] == min(col[t+1..t+3])",
+        "column_a": "cyclone_dist_North_Pacific_East",
+        "column_b": "cyclone_dist_North_Sea",
+        "frac_equal": 0.9953013278855976,
+        "n_compared": 9790
+      },
+      {
+        "test": "col[t] == min(col[t+1..t+3])",
+        "column_a": "cyclone_wind_North_Sea",
+        "column_b": "cyclone_slp_North_Pacific_East",
+        "frac_equal": 0.9912155260469867,
+        "n_compared": 9790
+      },
+      {
+        "test": "col[t] == min(col[t+1..t+3])",
+        "column_a": "cyclone_slp_North_Sea",
+        "column_b": "cyclone_slp_North_Pacific_East",
+        "frac_equal": 0.9912155260469867,
+        "n_compared": 9790
+      },
+      {
+        "test": "col[t] == min(col[t+1..t+3])",
+        "column_a": "cyclone_dist_North_Sea",
+        "column_b": "cyclone_slp_North_Pacific_East",
+        "frac_equal": 0.992849846782431,
+        "n_compared": 9790
+      },
+      {
+        "test": "col[t] == min(col[t+1..t+3])",
+        "column_a": "cyclone_slp_North_Pacific_East",
+        "column_b": "cyclone_slp_North_Pacific_East",
+        "frac_equal": 0.9991828396322778,
+        "n_compared": 9790
+      },
+      {
+        "test": "col[t] == min(col[t+1..t+3])",
+        "column_a": "cyclone_dist_North_Pacific_East",
+        "column_b": "cyclone_slp_North_Pacific_East",
+        "frac_equal": 0.9959141981613892,
+        "n_compared": 9790
+      },
+      {
+        "test": "col[t] == min(col[t+1..t+3])",
+        "column_a": "cyclone_wind_North_Sea",
+        "column_b": "cyclone_dist_North_Pacific_East",
+        "frac_equal": 0.9910112359550561,
+        "n_compared": 9790
+      },
+      {
+        "test": "col[t] == min(col[t+1..t+3])",
+        "column_a": "cyclone_slp_North_Sea",
+        "column_b": "cyclone_dist_North_Pacific_East",
+        "frac_equal": 0.9910112359550561,
+        "n_compared": 9790
+      },
+      {
+        "test": "col[t] == min(col[t+1..t+3])",
+        "column_a": "cyclone_dist_North_Sea",
+        "column_b": "cyclone_dist_North_Pacific_East",
+        "frac_equal": 0.9926455566905005,
+        "n_compared": 9790
+      },
+      {
+        "test": "col[t] == min(col[t+1..t+3])",
+        "column_a": "cyclone_slp_North_Pacific_East",
+        "column_b": "cyclone_dist_North_Pacific_East",
+        "frac_equal": 0.9989785495403473,
+        "n_compared": 9790
+      },
+      {
+        "test": "col[t] == min(col[t+1..t+3])",
+        "column_a": "cyclone_dist_North_Pacific_East",
+        "column_b": "cyclone_dist_North_Pacific_East",
+        "frac_equal": 0.9957099080694586,
+        "n_compared": 9790
+      },
+      {
+        "test": "col[t] == sum(col[t+1..t+3])",
+        "column_a": "cyclone_dist_North_Sea",
+        "column_b": "cyclone_slp_North_Pacific_East",
+        "frac_equal": 0.9903983656792645,
+        "n_compared": 9790
+      },
+      {
+        "test": "col[t] == sum(col[t+1..t+3])",
+        "column_a": "cyclone_slp_North_Pacific_East",
+        "column_b": "cyclone_slp_North_Pacific_East",
+        "frac_equal": 0.9967313585291113,
+        "n_compared": 9790
+      },
+      {
+        "test": "col[t] == sum(col[t+1..t+3])",
+        "column_a": "cyclone_dist_North_Pacific_East",
+        "column_b": "cyclone_slp_North_Pacific_East",
+        "frac_equal": 0.9934627170582226,
+        "n_compared": 9790
+      },
+      {
+        "test": "col[t] == mean(col[t+1..t+5])",
+        "column_a": "cyclone_slp_North_Pacific_East",
+        "column_b": "cyclone_slp_North_Pacific_East",
+        "frac_equal": 0.9950930280106318,
+        "n_compared": 9782
+      },
+      {
+        "test": "col[t] == mean(col[t+1..t+5])",
+        "column_a": "cyclone_dist_North_Pacific_East",
+        "column_b": "cyclone_slp_North_Pacific_East",
+        "frac_equal": 0.991821713351053,
+        "n_compared": 9782
+      },
+      {
+        "test": "col[t] == max(col[t+1..t+5])",
+        "column_a": "cyclone_slp_North_Pacific_East",
+        "column_b": "cyclone_slp_North_Pacific_East",
+        "frac_equal": 0.9950930280106318,
+        "n_compared": 9782
+      },
+      {
+        "test": "col[t] == max(col[t+1..t+5])",
+        "column_a": "cyclone_dist_North_Pacific_East",
+        "column_b": "cyclone_slp_North_Pacific_East",
+        "frac_equal": 0.991821713351053,
+        "n_compared": 9782
+      },
+      {
+        "test": "col[t] == min(col[t+1..t+5])",
+        "column_a": "cyclone_slp_North_Pacific_East",
+        "column_b": "cyclone_wind_South_China_Sea",
+        "frac_equal": 0.9948885708444081,
+        "n_compared": 9782
+      },
+      {
+        "test": "col[t] == min(col[t+1..t+5])",
+        "column_a": "cyclone_dist_North_Pacific_East",
+        "column_b": "cyclone_wind_South_China_Sea",
+        "frac_equal": 0.9916172561848293,
+        "n_compared": 9782
+      }
+    ],
+    "n_exact_forward_rolling_matches": 128,
+    "identical_column_pairs": [],
+    "near_perfect_target_predictors": [],
+    "banned_forensics": [
+      {
+        "feature": "Cyclone_Wind_Forecast3d",
+        "nunique": 44,
+        "corr_contemporaneous_log_rv_fwd": -0.014368122282260838,
+        "forward_link": "Cyclone_Wind_Forecast3d(t) == Cyclone_Wind_Forecast7d(t+4) exactly over 9772 rows",
+        "verdict": "BANNED - CONFIRMED forward-looking"
+      },
+      {
+        "feature": "Cyclone_Wind_Forecast7d",
+        "nunique": 44,
+        "corr_contemporaneous_log_rv_fwd": 0.006350523748267847,
+        "forward_link": "no exact forward-shift match found",
+        "verdict": "BANNED - conservative (not proven forward-looking)"
+      },
+      {
+        "feature": "Cyclone_Active_Forecast3d",
+        "nunique": 2,
+        "corr_contemporaneous_log_rv_fwd": -0.007968815484553214,
+        "forward_link": "no exact forward-shift match found",
+        "verdict": "BANNED - conservative (not proven forward-looking)"
+      },
+      {
+        "feature": "Wind_Speed_Forecast7d",
+        "nunique": 4744,
+        "corr_contemporaneous_log_rv_fwd": -0.027810473867977154,
+        "forward_link": "no exact forward-shift match found",
+        "verdict": "BANNED - conservative (not proven forward-looking)"
+      },
+      {
+        "feature": "Rolling_7d_Cyclone_Days",
+        "nunique": 8,
+        "corr_contemporaneous_log_rv_fwd": 0.015754393136153035,
+        "forward_link": "no exact forward-shift match found",
+        "verdict": "BANNED - conservative (not proven forward-looking)"
+      },
+      {
+        "feature": "Price_Volatility_7d",
+        "nunique": 4661,
+        "corr_contemporaneous_log_rv_fwd": 0.15591783775277115,
+        "forward_link": "no exact forward-shift match found",
+        "verdict": "BANNED - conservative (not proven forward-looking)"
+      },
+      {
+        "feature": "Price_Volatility_30d",
+        "nunique": 4668,
+        "corr_contemporaneous_log_rv_fwd": 0.2525298936373331,
+        "forward_link": "no exact forward-shift match found",
+        "verdict": "BANNED - conservative (not proven forward-looking)"
+      }
+    ],
+    "constant_or_1bit_weather_cols": [
+      {
+        "feature": "cyclone_active_South_China_Sea",
+        "distinct_values_per_date_mean": 1.0,
+        "is_global": true,
+        "nunique": 2,
+        "is_constant_or_binary": true
+      },
+      {
+        "feature": "cyclone_active_Indian_Ocean",
+        "distinct_values_per_date_mean": 1.1930010604453871,
+        "is_global": false,
+        "nunique": 2,
+        "is_constant_or_binary": true
+      },
+      {
+        "feature": "cyclone_active_Arabian_Sea",
+        "distinct_values_per_date_mean": 1.0357016613644396,
+        "is_global": false,
+        "nunique": 2,
+        "is_constant_or_binary": true
+      },
+      {
+        "feature": "cyclone_wind_Red_Sea",
+        "distinct_values_per_date_mean": 1.0,
+        "is_global": true,
+        "nunique": 1,
+        "is_constant_or_binary": true
+      },
+      {
+        "feature": "cyclone_slp_Red_Sea",
+        "distinct_values_per_date_mean": 1.0,
+        "is_global": true,
+        "nunique": 1,
+        "is_constant_or_binary": true
+      },
+      {
+        "feature": "cyclone_dist_Red_Sea",
+        "distinct_values_per_date_mean": 1.0,
+        "is_global": true,
+        "nunique": 1,
+        "is_constant_or_binary": true
+      },
+      {
+        "feature": "cyclone_active_Red_Sea",
+        "distinct_values_per_date_mean": 1.0,
+        "is_global": true,
+        "nunique": 1,
+        "is_constant_or_binary": true
+      },
+      {
+        "feature": "cyclone_active_Mediterranean_Sea",
+        "distinct_values_per_date_mean": 1.1099328384588194,
+        "is_global": false,
+        "nunique": 2,
+        "is_constant_or_binary": true
+      },
+      {
+        "feature": "cyclone_wind_North_Atlantic",
+        "distinct_values_per_date_mean": 1.0,
+        "is_global": true,
+        "nunique": 1,
+        "is_constant_or_binary": true
+      },
+      {
+        "feature": "cyclone_slp_North_Atlantic",
+        "distinct_values_per_date_mean": 1.0,
+        "is_global": true,
+        "nunique": 1,
+        "is_constant_or_binary": true
+      },
+      {
+        "feature": "cyclone_dist_North_Atlantic",
+        "distinct_values_per_date_mean": 1.0,
+        "is_global": true,
+        "nunique": 1,
+        "is_constant_or_binary": true
+      },
+      {
+        "feature": "cyclone_active_North_Atlantic",
+        "distinct_values_per_date_mean": 1.0,
+        "is_global": true,
+        "nunique": 1,
+        "is_constant_or_binary": true
+      },
+      {
+        "feature": "cyclone_active_North_Sea",
+        "distinct_values_per_date_mean": 1.0134323082361258,
+        "is_global": false,
+        "nunique": 2,
+        "is_constant_or_binary": true
+      },
+      {
+        "feature": "cyclone_active_North_Pacific_West",
+        "distinct_values_per_date_mean": 1.167903852951573,
+        "is_global": false,
+        "nunique": 2,
+        "is_constant_or_binary": true
+      },
+      {
+        "feature": "cyclone_active_North_Pacific_East",
+        "distinct_values_per_date_mean": 1.0070696359137505,
+        "is_global": false,
+        "nunique": 2,
+        "is_constant_or_binary": true
+      },
+      {
+        "feature": "Cyclone_Active_Lag7d",
+        "distinct_values_per_date_mean": 1.2778366914103925,
+        "is_global": false,
+        "nunique": 2,
+        "is_constant_or_binary": true
+      },
+      {
+        "feature": "Cyclone_Active_Lag14d",
+        "distinct_values_per_date_mean": 1.2753623188405796,
+        "is_global": false,
+        "nunique": 2,
+        "is_constant_or_binary": true
+      },
+      {
+        "feature": "Cyclone_Active_Lag30d",
+        "distinct_values_per_date_mean": 1.2697066101095793,
+        "is_global": false,
+        "nunique": 2,
+        "is_constant_or_binary": true
+      }
+    ],
+    "n_weather_cols_constant_or_binary": 18,
+    "n_weather_cols_all_constant": 8,
+    "n_weather_cols_global": 39,
+    "split_test_before_origin": 0,
+    "split_train_target_reaches_origin": 1500,
+    "split_train_dates_in_test": 0
+  }
+}

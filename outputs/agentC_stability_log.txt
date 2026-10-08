@@ -1,0 +1,2 @@
+[stab] rows=9736 price=34 weather=82 dummies=4
+[stab] folds=75

@@ -1,0 +1,195 @@
+====================================================================================================
+MARITIME FREIGHT: VOLATILITY & LARGE-MOVE PREDICTION  (v2)
+====================================================================================================
+[load] (9800, 104) from D:\Internproj\New ML\clean_engineered_dataset.csv
+[load] range 2015-01-05 .. 2026-04-15
+
+====================================================================================================
+DATA QUALITY - LANE PANEL
+====================================================================================================
+                        lane  n_rows  zero_return_pct  daily_sd  acf_r2_lag1  acf_r2_lag10  acf_r2_lag21  var_ratio_5  excess_kurt  price_min  price_max
+XSICFENE_FarEast_NorthEurope    2829        14.462518  0.061743     0.007247      0.005946      0.193707     1.001043    89.257193      312.0    15185.0
+XSICFEUW_FarEast_USWestCoast    2071        23.719807  0.048257     0.002426      0.125893      0.095703     1.000000    34.323967      610.0    12906.0
+XSICNEFE_NorthEurope_FarEast    2829        14.462518  0.061743     0.007247      0.005946      0.193707     1.001043    89.257193      312.0    15185.0
+XSICUWFE_USWestCoast_FarEast    2071        23.719807  0.048257     0.002426      0.125893      0.095703     1.000000    34.323967      610.0    12906.0
+
+[duplicate-lane check on RAW file]
+  XSICFENE_FarEast_NorthEurope vs XSICFEUW_FarEast_USWestCoast: max|diff| = 4670.0  identical=False
+  XSICFENE_FarEast_NorthEurope vs XSICNEFE_NorthEurope_FarEast: max|diff| = 0.0  identical=True
+  XSICFENE_FarEast_NorthEurope vs XSICUWFE_USWestCoast_FarEast: max|diff| = 4670.0  identical=False
+  XSICFEUW_FarEast_USWestCoast vs XSICNEFE_NorthEurope_FarEast: max|diff| = 4670.0  identical=False
+  XSICFEUW_FarEast_USWestCoast vs XSICUWFE_USWestCoast_FarEast: max|diff| = 0.0  identical=True
+  XSICNEFE_NorthEurope_FarEast vs XSICUWFE_USWestCoast_FarEast: max|diff| = 4670.0  identical=False
+
+[reference] a real market has acf(r^2,1) ~ +0.2..+0.4 and VR(5) ~ 1.3-2.5.
+[reference] this file: acf(r^2,1) ~ +0.005, VR(5) ~ 1.001 at DAILY frequency, but acf(r^2,21) ~ +0.145.
+[reading] no lag-1 volatility clustering, but real structure at monthly
+          scale -> the monthly-scale signal is learnable; do not write it off.
+[lanes] collapsed to 2 physical lanes: ['LANE_FarEast_NorthEurope', 'LANE_FarEast_USWestCoast']
+[label] FIXED scale-free threshold: |fwd_ret| > 2.091 x sd_ret(t-21..t) x sqrt(5)
+[label]   MOVE_K set once from <2020-01-01 to hit a 90% positive rate
+[label] overall positive rate = 0.1505
+[label] positives per year (must be non-zero in every year):
+[label]   2015: n=  500 pos=  61 rate=0.1220
+[label]   2016: n=  506 pos=  34 rate=0.0672
+[label]   2017: n=  502 pos=  56 rate=0.1116
+[label]   2018: n=  988 pos= 109 rate=0.1103
+[label]   2019: n=  996 pos=  87 rate=0.0873
+[label]   2020: n= 1008 pos= 164 rate=0.1627
+[label]   2021: n= 1008 pos=  86 rate=0.0853
+[label]   2022: n= 1012 pos= 230 rate=0.2273
+[label]   2023: n= 1000 pos= 128 rate=0.1280
+[label]   2024: n= 1000 pos= 206 rate=0.2060
+[label]   2025: n=  996 pos= 286 rate=0.2871
+[label]   2026: n=  284 pos=  26 rate=0.0949
+[data] modelling rows: 9768  (2015-01-05 .. 2026-04-15)
+[features] price          n=45
+[features] price_lane     n=47
+[features] price_weather  n=129
+[features] price_econ     n=51
+[features] all            n=133
+[features] BANNED (forward-looking): ['Cyclone_Wind_Forecast3d', 'Cyclone_Wind_Forecast7d', 'Cyclone_Active_Forecast3d', 'Wind_Speed_Forecast7d', 'Rolling_7d_Cyclone_Days', 'Price_Volatility_7d', 'Price_Volatility_30d']
+
+====================================================================================================
+TASK A - VOLATILITY: expanding-window walk-forward (target = forward 5d realised vol)
+====================================================================================================
+  ...fold 12/76 origin 2020-12-01 elapsed 186s
+  ...fold 24/76 origin 2021-12-01 elapsed 378s
+  ...fold 36/76 origin 2022-12-01 elapsed 579s
+  ...fold 48/76 origin 2023-12-01 elapsed 784s
+  ...fold 60/76 origin 2024-12-01 elapsed 996s
+  ...fold 72/76 origin 2025-12-01 elapsed 1221s
+
+--- AGGREGATE VOLATILITY (robust ranking) ---
+                    model  folds  MAE_log  RMSE_log   QLIKE_mean  QLIKE_trim1  QLIKE_median  SQERR_trim1      bias
+      baseline_har_lagmed     76 0.811180  0.995989     5.530638     5.530192      0.323575     1.051034 -0.023262
+   baseline_har_strictlag     76 0.818627  1.014115    15.287246    15.287066      0.254543     1.091237  0.005297
+  baseline_har_lagmed_cal     76 0.823673  1.013780     7.755923     7.755379      0.478737     1.091550  0.007854
+              xgb_all_cal     76 0.824390  1.014549     7.810218     7.809675      0.496585     1.092238  0.012970
+       xgb_price_lane_cal     76 0.824390  1.014549     7.810218     7.809675      0.496585     1.092238  0.012970
+       xgb_price_only_cal     76 0.824390  1.014549     7.810218     7.809675      0.496585     1.092238  0.012970
+    xgb_price_weather_cal     76 0.824390  1.014549     7.810218     7.809675      0.496585     1.092238  0.012970
+          baseline_har_rv     76 0.824547  1.020054    25.070187    25.070045      0.273777     1.106842  0.012052
+      baseline_har_rv_cal     76 0.841897  1.043492    77.112844    77.112695      0.352059     1.158019  0.057076
+            baseline_ewma     76 0.857903  1.055561    12.391050    12.390914      0.629899     1.181783  0.175280
+     baseline_climatology     76 0.886450  1.080282     4.377140     4.377140      0.444868     1.242855 -0.168191
+baseline_random_walk_rv22     76 0.893740  1.100440    24.909008    24.908917      1.039255     1.265200  0.302646
+  baseline_har_rv_smeared     76 1.004234  1.234195     5.201481     5.201442      0.593837     1.643097 -0.712424
+           xgb_price_only     76 1.076893  1.310093    98.185185    97.382733     14.157962     1.919710  0.000041
+           xgb_price_lane     76 1.087940  1.333801   217.883508   211.386798     12.903930     1.999075  0.031943
+        xgb_price_weather     76 1.137826  1.393555  9940.643479  9939.426089     18.333708     2.251666  0.112285
+                  xgb_all     76 1.161649  1.414224  4404.161834  4156.952593     21.275201     2.371322  0.218273
+    xgb_price_only_shrunk     76 1.228238  1.487856   626.699151   618.658843     46.755013     2.535571  0.043254
+    xgb_price_lane_shrunk     76 1.245827  1.522927  1216.125978  1169.321958     33.415675     2.651703  0.083008
+ xgb_price_weather_shrunk     76 1.301972  1.593471 21860.649798 21841.214750     53.594536     2.996308  0.180463
+           xgb_all_shrunk     76 1.332613  1.622505 26837.381869 26521.146725     77.031904     3.206365  0.307170
+       baseline_garch11_t     76 1.374951  1.637391     1.794895     1.794895      1.381219     3.868873 -1.209276
+
+--- POOLED out-of-sample R2 in log space (honest; within-fold R2 is a ~4-observation statistic and is NOT reported) ---
+  baseline_climatology             pooled R2 = -0.0477   corr = -0.074
+  baseline_ewma                    pooled R2 = -0.0008   corr = +0.314
+  baseline_garch11_t               pooled R2 = -2.2457   corr = +0.026
+  baseline_har_lagmed              pooled R2 = +0.1123   corr = +0.353
+  baseline_har_lagmed_cal          pooled R2 = +0.0769   corr = +0.354
+  baseline_har_rv                  pooled R2 = +0.0655   corr = +0.296
+  baseline_har_rv_cal              pooled R2 = +0.0210   corr = +0.299
+  baseline_har_rv_smeared          pooled R2 = -0.3935   corr = +0.274
+  baseline_har_strictlag           pooled R2 = +0.0778   corr = +0.307
+  baseline_random_walk_rv22        pooled R2 = -0.0717   corr = +0.345
+  xgb_all                          pooled R2 = -0.9982   corr = +0.222
+  xgb_all_cal                      pooled R2 = +0.0760   corr = +0.356
+  xgb_all_shrunk                   pooled R2 = -1.7027   corr = +0.224
+  xgb_price_lane                   pooled R2 = -0.6903   corr = +0.248
+  xgb_price_lane_cal               pooled R2 = +0.0760   corr = +0.356
+  xgb_price_lane_shrunk            pooled R2 = -1.2472   corr = +0.249
+  xgb_price_only                   pooled R2 = -0.6197   corr = +0.256
+  xgb_price_only_cal               pooled R2 = +0.0760   corr = +0.356
+  xgb_price_only_shrunk            pooled R2 = -1.1413   corr = +0.257
+  xgb_price_weather                pooled R2 = -0.9109   corr = +0.202
+  xgb_price_weather_cal            pooled R2 = +0.0760   corr = +0.356
+  xgb_price_weather_shrunk         pooled R2 = -1.5458   corr = +0.205
+
+====================================================================================================
+TASK B - LARGE MOVE: P(|forward 5d return| > FIXED threshold from <2020-01-01) - same threshold in every fold
+====================================================================================================
+  ...origin 2020-12-01 elapsed 124s
+  [skip] origin 2021-01-01 degenerate label (train 0.112, test 0.000)
+  [skip] origin 2021-02-01 degenerate label (train 0.113, test 0.000)
+  [skip] origin 2021-08-01 degenerate label (train 0.115, test 0.000)
+  [skip] origin 2021-12-01 degenerate label (train 0.110, test 0.000)
+  [skip] origin 2022-04-01 degenerate label (train 0.114, test 0.000)
+  ...origin 2022-12-01 elapsed 379s
+  [skip] origin 2023-05-01 degenerate label (train 0.125, test 0.000)
+  [skip] origin 2023-11-01 degenerate label (train 0.126, test 0.000)
+  ...origin 2023-12-01 elapsed 511s
+  [skip] origin 2024-06-01 degenerate label (train 0.130, test 0.000)
+  [skip] origin 2024-07-01 degenerate label (train 0.130, test 0.000)
+  ...origin 2024-12-01 elapsed 661s
+  ...origin 2025-12-01 elapsed 877s
+  [skip] origin 2026-04-01 degenerate label (train 0.151, test 0.000)
+
+--- AGGREGATE CLASSIFICATION ---
+              model  folds      AUC       AP    Brier  BrierSkill_vs_clim  base_rate
+   logit_price_only     66 0.693324 0.471463 0.170866           -0.389555   0.202676
+     xgb_price_only     66 0.667120 0.433354 0.220550           -1.045218   0.202676
+logit_price_weather     66 0.659984 0.402353 0.181399           -0.477422   0.202676
+            xgb_all     66 0.649194 0.383816 0.219000           -0.949118   0.202676
+  xgb_price_weather     66 0.642190 0.377732 0.222488           -1.016162   0.202676
+
+[note] scored on 66 folds (v1 scored 35 of 75 - the other 40 had zero positives and were dropped)
+
+====================================================================================================
+INCREMENTAL VALUE OF WEATHER / CYCLONE / ECON FEATURES
+====================================================================================================
+          task            baseline                challenger  n_pairs  mean_loss_base  mean_loss_challenger  skill_gain_pct      NW_t      p_value  significant_5pct  NW_t_datecollapsed  p_datecollapsed  NW_t_winsorised  p_winsorised  win_rate_pct
+    volatility baseline_har_lagmed   baseline_har_lagmed_cal     3150        1.052994              1.094883       -3.978114 -4.430309 9.730450e-06              True           -3.865130     1.155379e-04        -4.416623  1.036306e-05     45.365079
+    volatility baseline_har_lagmed           baseline_har_rv     3150        1.052994              1.108401       -5.261850 -2.389248 1.694141e-02              True           -2.226126     2.614666e-02        -2.235503  2.545417e-02     50.253968
+    volatility baseline_har_lagmed    baseline_har_strictlag     3150        1.052994              1.093673       -3.863204 -1.989749 4.670489e-02              True           -1.910507     5.624929e-02        -1.772247  7.645029e-02     50.031746
+    volatility baseline_har_lagmed             baseline_ewma     3150        1.052994              1.186741      -12.701626 -4.994848 6.208963e-07              True           -4.835693     1.456344e-06        -4.948316  7.878806e-07     44.380952
+    volatility baseline_har_lagmed      baseline_climatology     3150        1.052994              1.242551      -18.001711 -4.952743 7.702975e-07              True           -4.309657     1.736265e-05        -5.170525  2.480186e-07     44.349206
+    volatility baseline_har_lagmed baseline_random_walk_rv22     3150        1.052994              1.271386      -20.740119 -6.482456 1.043765e-10              True           -6.188485     7.728673e-10        -6.594832  4.974088e-11     42.000000
+    volatility baseline_har_lagmed        baseline_garch11_t     3150        1.052994              3.842256     -264.888763 -5.852555 5.338222e-09              True           -4.406895     1.119454e-05        -6.573568  5.728196e-11     30.444444
+    volatility baseline_har_lagmed            xgb_price_only     3150        1.052994              1.920910      -82.423737 -8.329243 2.220446e-16              True           -6.699755     2.896861e-11        -8.726113  0.000000e+00     40.095238
+    volatility baseline_har_lagmed        xgb_price_only_cal     3150        1.052994              1.095957       -4.080103 -4.291000 1.832269e-05              True           -3.740338     1.903543e-04        -4.296366  1.788745e-05     45.301587
+    volatility baseline_har_lagmed         xgb_price_weather     3150        1.052994              2.264753     -115.077590 -7.900683 3.774758e-15              True           -6.168843     8.726659e-10        -8.931829  0.000000e+00     39.587302
+    volatility baseline_har_lagmed  xgb_price_weather_shrunk     3150        1.052994              3.016697     -186.487647 -9.266933 0.000000e+00              True           -7.133082     1.490363e-12       -10.366977  0.000000e+00     36.063492
+    volatility baseline_har_lagmed                   xgb_all     3150        1.052994              2.372994     -125.356907 -8.111094 6.661338e-16              True           -6.326240     3.265359e-10        -8.712549  0.000000e+00     38.634921
+    volatility baseline_har_lagmed            xgb_all_shrunk     3150        1.052994              3.208959     -204.746238 -9.181674 0.000000e+00              True           -7.064209     2.415401e-12        -9.872228  0.000000e+00     35.333333
+classification      xgb_price_only         xgb_price_weather     2768        0.220508              0.223120       -1.184832 -0.491224 6.233073e-01             False           -0.446632     6.552110e-01        -0.489549  6.244917e-01     52.167630
+classification      xgb_price_only                   xgb_all     2768        0.220508              0.219482        0.465233  0.177836 8.588651e-01             False            0.161624     8.716258e-01         0.170976  8.642552e-01     51.372832
+
+(skill_gain_pct > 0 => challenger better;  NW_t > 0 => challenger better)
+(trust p_datecollapsed: it collapses the differential within each date, removing
+ cross-lane correlation. p_value is the raw HAC test on the winsorised-free series.)
+
+--- OPERATIONAL DECISION LAYER ---
+              model  threshold  n_alerts  precision   recall     lift  base_rate      AUC  BrierSkill_vs_climatology
+   logit_price_only        0.3      1047   0.280802 0.261101 1.380570   0.203396 0.624343                  -0.057486
+   logit_price_only        0.4       584   0.304795 0.158082 1.498528   0.203396 0.624343                  -0.057486
+   logit_price_only        0.5       262   0.282443 0.065719 1.388635   0.203396 0.624343                  -0.057486
+   logit_price_only        0.6       117   0.376068 0.039076 1.848947   0.203396 0.624343                  -0.057486
+   logit_price_only        0.7        66   0.363636 0.021314 1.787825   0.203396 0.624343                  -0.057486
+logit_price_weather        0.3      1227   0.268134 0.292185 1.318284   0.203396 0.604279                  -0.123942
+logit_price_weather        0.4       759   0.264822 0.178508 1.302003   0.203396 0.604279                  -0.123942
+logit_price_weather        0.5       412   0.271845 0.099467 1.336529   0.203396 0.604279                  -0.123942
+logit_price_weather        0.6       234   0.329060 0.068384 1.617829   0.203396 0.604279                  -0.123942
+logit_price_weather        0.7       115   0.382609 0.039076 1.881103   0.203396 0.604279                  -0.123942
+            xgb_all        0.3      1307   0.296098 0.343694 1.455771   0.203396 0.626174                  -0.354608
+            xgb_all        0.4      1096   0.300182 0.292185 1.475853   0.203396 0.626174                  -0.354608
+            xgb_all        0.5       932   0.293991 0.243339 1.445414   0.203396 0.626174                  -0.354608
+            xgb_all        0.6       774   0.293282 0.201599 1.441925   0.203396 0.626174                  -0.354608
+            xgb_all        0.7       648   0.277778 0.159858 1.365700   0.203396 0.626174                  -0.354608
+     xgb_price_only        0.3      1400   0.285714 0.355240 1.404720   0.203396 0.625255                  -0.360940
+     xgb_price_only        0.4      1175   0.297872 0.310835 1.464495   0.203396 0.625255                  -0.360940
+     xgb_price_only        0.5      1016   0.297244 0.268206 1.461406   0.203396 0.625255                  -0.360940
+     xgb_price_only        0.6       867   0.292964 0.225577 1.440364   0.203396 0.625255                  -0.360940
+     xgb_price_only        0.7       707   0.302687 0.190053 1.488168   0.203396 0.625255                  -0.360940
+  xgb_price_weather        0.3      1213   0.265458 0.285968 1.305127   0.203396 0.616188                  -0.377064
+  xgb_price_weather        0.4      1031   0.265761 0.243339 1.306621   0.203396 0.616188                  -0.377064
+  xgb_price_weather        0.5       898   0.269488 0.214920 1.324942   0.203396 0.616188                  -0.377064
+  xgb_price_weather        0.6       711   0.258790 0.163410 1.272348   0.203396 0.616188                  -0.377064
+  xgb_price_weather        0.7       601   0.252912 0.134991 1.243446   0.203396 0.616188                  -0.377064
+[plots] written to D:\testing\outputs\plots
+[findings] written to D:\testing\outputs\FINDINGS.md
+
+[done] 2235s  outputs in D:\testing\outputs

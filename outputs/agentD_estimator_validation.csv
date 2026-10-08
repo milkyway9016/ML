@@ -1,0 +1,4 @@
+estimator,placebo_mean,placebo_sd,placebo_lo,placebo_hi
+IPW doubly-robust,-0.0037,0.0258,-0.0634,0.0273
+vol-decile stratified,0.0009,0.0303,-0.0506,0.0581
+k=1 NN matched (REJECTED),0.0553,0.0338,-0.0062,0.1055

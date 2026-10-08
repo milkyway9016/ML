@@ -1,0 +1,559 @@
+==========================================================================================
+CONFIRMED DETERMINISTIC FORWARD LOOK-UPS  (X[t] == Y[t+k], k>0)
+==========================================================================================
+                        feature                               equals  k  frac_equal    n  is_banned
+        Cyclone_Wind_Forecast3d          Route_Max_cyclone_wind[t+3]  3    1.000000 9788       True
+        Cyclone_Wind_Forecast7d         Cyclone_Wind_Forecast3d[t+4]  4    1.000000 9772       True
+        Cyclone_Wind_Forecast7d          Route_Max_cyclone_wind[t+7]  7    1.000000 9772       True
+             Cyclone_Wind_Lag7d             Cyclone_Wind_Lag14d[t+7]  7    1.000000 9744      False
+                      Price_USD                    Price_Lag_7d[t+7]  7    1.000000 9772      False
+         Route_Max_cyclone_wind              Cyclone_Wind_Lag7d[t+7]  7    1.000000 9772      False
+          Route_Mean_wind_speed                Wind_Speed_Lag7d[t+7]  7    1.000000 9516      False
+          Wind_Speed_Forecast7d           Route_Mean_wind_speed[t+7]  7    1.000000 9488       True
+               Wind_Speed_Lag7d               Wind_Speed_Lag14d[t+7]  7    1.000000 9516      False
+cyclone_dist_North_Pacific_East  cyclone_slp_North_Pacific_East[t+1]  1    0.995100 9796      False
+cyclone_dist_North_Pacific_East  cyclone_slp_North_Pacific_East[t+2]  2    0.995098 9792      False
+cyclone_dist_North_Pacific_East  cyclone_slp_North_Pacific_East[t+3]  3    0.995096 9788      False
+cyclone_dist_North_Pacific_East  cyclone_slp_North_Pacific_East[t+4]  4    0.995094 9784      False
+cyclone_dist_North_Pacific_East  cyclone_slp_North_Pacific_East[t+5]  5    0.995092 9780      False
+cyclone_dist_North_Pacific_East  cyclone_slp_North_Pacific_East[t+6]  6    0.995090 9776      False
+cyclone_dist_North_Pacific_East  cyclone_slp_North_Pacific_East[t+7]  7    0.995088 9772      False
+         cyclone_dist_North_Sea  cyclone_slp_North_Pacific_East[t+1]  1    0.992038 9796      False
+         cyclone_dist_North_Sea  cyclone_slp_North_Pacific_East[t+2]  2    0.992034 9792      False
+         cyclone_dist_North_Sea  cyclone_slp_North_Pacific_East[t+3]  3    0.992031 9788      False
+         cyclone_dist_North_Sea  cyclone_slp_North_Pacific_East[t+4]  4    0.992028 9784      False
+         cyclone_dist_North_Sea  cyclone_slp_North_Pacific_East[t+5]  5    0.992025 9780      False
+         cyclone_dist_North_Sea  cyclone_slp_North_Pacific_East[t+6]  6    0.992021 9776      False
+         cyclone_dist_North_Sea  cyclone_slp_North_Pacific_East[t+7]  7    0.992018 9772      False
+ cyclone_slp_North_Pacific_East          cyclone_wind_North_Sea[t+1]  1    0.990404 9796      False
+ cyclone_slp_North_Pacific_East           cyclone_slp_North_Sea[t+1]  1    0.990404 9796      False
+ cyclone_slp_North_Pacific_East          cyclone_dist_North_Sea[t+1]  1    0.992038 9796      False
+ cyclone_slp_North_Pacific_East cyclone_dist_North_Pacific_East[t+1]  1    0.995100 9796      False
+ cyclone_slp_North_Pacific_East          cyclone_wind_North_Sea[t+2]  2    0.990400 9792      False
+ cyclone_slp_North_Pacific_East           cyclone_slp_North_Sea[t+2]  2    0.990400 9792      False
+ cyclone_slp_North_Pacific_East          cyclone_dist_North_Sea[t+2]  2    0.992034 9792      False
+ cyclone_slp_North_Pacific_East cyclone_dist_North_Pacific_East[t+2]  2    0.995098 9792      False
+ cyclone_slp_North_Pacific_East          cyclone_wind_North_Sea[t+3]  3    0.990396 9788      False
+ cyclone_slp_North_Pacific_East           cyclone_slp_North_Sea[t+3]  3    0.990396 9788      False
+ cyclone_slp_North_Pacific_East          cyclone_dist_North_Sea[t+3]  3    0.992031 9788      False
+ cyclone_slp_North_Pacific_East cyclone_dist_North_Pacific_East[t+3]  3    0.995096 9788      False
+ cyclone_slp_North_Pacific_East          cyclone_wind_North_Sea[t+4]  4    0.990392 9784      False
+ cyclone_slp_North_Pacific_East           cyclone_slp_North_Sea[t+4]  4    0.990392 9784      False
+ cyclone_slp_North_Pacific_East          cyclone_dist_North_Sea[t+4]  4    0.992028 9784      False
+ cyclone_slp_North_Pacific_East cyclone_dist_North_Pacific_East[t+4]  4    0.995094 9784      False
+ cyclone_slp_North_Pacific_East          cyclone_wind_North_Sea[t+5]  5    0.990389 9780      False
+ cyclone_slp_North_Pacific_East           cyclone_slp_North_Sea[t+5]  5    0.990389 9780      False
+ cyclone_slp_North_Pacific_East          cyclone_dist_North_Sea[t+5]  5    0.992025 9780      False
+ cyclone_slp_North_Pacific_East cyclone_dist_North_Pacific_East[t+5]  5    0.995092 9780      False
+ cyclone_slp_North_Pacific_East          cyclone_wind_North_Sea[t+6]  6    0.990385 9776      False
+ cyclone_slp_North_Pacific_East           cyclone_slp_North_Sea[t+6]  6    0.990385 9776      False
+ cyclone_slp_North_Pacific_East          cyclone_dist_North_Sea[t+6]  6    0.992021 9776      False
+ cyclone_slp_North_Pacific_East cyclone_dist_North_Pacific_East[t+6]  6    0.995090 9776      False
+ cyclone_slp_North_Pacific_East          cyclone_wind_North_Sea[t+7]  7    0.990381 9772      False
+ cyclone_slp_North_Pacific_East           cyclone_slp_North_Sea[t+7]  7    0.990381 9772      False
+ cyclone_slp_North_Pacific_East          cyclone_dist_North_Sea[t+7]  7    0.992018 9772      False
+ cyclone_slp_North_Pacific_East cyclone_dist_North_Pacific_East[t+7]  7    0.995088 9772      False
+          cyclone_slp_North_Sea  cyclone_slp_North_Pacific_East[t+1]  1    0.990404 9796      False
+          cyclone_slp_North_Sea  cyclone_slp_North_Pacific_East[t+2]  2    0.990400 9792      False
+          cyclone_slp_North_Sea  cyclone_slp_North_Pacific_East[t+3]  3    0.990396 9788      False
+          cyclone_slp_North_Sea  cyclone_slp_North_Pacific_East[t+4]  4    0.990392 9784      False
+          cyclone_slp_North_Sea  cyclone_slp_North_Pacific_East[t+5]  5    0.990389 9780      False
+          cyclone_slp_North_Sea  cyclone_slp_North_Pacific_East[t+6]  6    0.990385 9776      False
+          cyclone_slp_North_Sea  cyclone_slp_North_Pacific_East[t+7]  7    0.990381 9772      False
+         cyclone_wind_North_Sea  cyclone_slp_North_Pacific_East[t+1]  1    0.990404 9796      False
+         cyclone_wind_North_Sea  cyclone_slp_North_Pacific_East[t+2]  2    0.990400 9792      False
+         cyclone_wind_North_Sea  cyclone_slp_North_Pacific_East[t+3]  3    0.990396 9788      False
+         cyclone_wind_North_Sea  cyclone_slp_North_Pacific_East[t+4]  4    0.990392 9784      False
+         cyclone_wind_North_Sea  cyclone_slp_North_Pacific_East[t+5]  5    0.990389 9780      False
+         cyclone_wind_North_Sea  cyclone_slp_North_Pacific_East[t+6]  6    0.990385 9776      False
+         cyclone_wind_North_Sea  cyclone_slp_North_Pacific_East[t+7]  7    0.990381 9772      False
+
+--- FORWARD-LOOKING COLUMNS THAT ARE *BANNED* (correctly excluded) ---
+                feature                       equals  k  frac_equal
+Cyclone_Wind_Forecast3d  Route_Max_cyclone_wind[t+3]  3         1.0
+Cyclone_Wind_Forecast7d Cyclone_Wind_Forecast3d[t+4]  4         1.0
+Cyclone_Wind_Forecast7d  Route_Max_cyclone_wind[t+7]  7         1.0
+  Wind_Speed_Forecast7d   Route_Mean_wind_speed[t+7]  7         1.0
+
+--- FORWARD-LOOKING COLUMNS THAT ARE *IN USE* AS FEATURES (real leaks) ---
+                        feature                               equals  k  frac_equal
+             Cyclone_Wind_Lag7d             Cyclone_Wind_Lag14d[t+7]  7    1.000000
+                      Price_USD                    Price_Lag_7d[t+7]  7    1.000000
+         Route_Max_cyclone_wind              Cyclone_Wind_Lag7d[t+7]  7    1.000000
+          Route_Mean_wind_speed                Wind_Speed_Lag7d[t+7]  7    1.000000
+               Wind_Speed_Lag7d               Wind_Speed_Lag14d[t+7]  7    1.000000
+cyclone_dist_North_Pacific_East  cyclone_slp_North_Pacific_East[t+1]  1    0.995100
+cyclone_dist_North_Pacific_East  cyclone_slp_North_Pacific_East[t+2]  2    0.995098
+cyclone_dist_North_Pacific_East  cyclone_slp_North_Pacific_East[t+3]  3    0.995096
+cyclone_dist_North_Pacific_East  cyclone_slp_North_Pacific_East[t+4]  4    0.995094
+cyclone_dist_North_Pacific_East  cyclone_slp_North_Pacific_East[t+5]  5    0.995092
+cyclone_dist_North_Pacific_East  cyclone_slp_North_Pacific_East[t+6]  6    0.995090
+cyclone_dist_North_Pacific_East  cyclone_slp_North_Pacific_East[t+7]  7    0.995088
+         cyclone_dist_North_Sea  cyclone_slp_North_Pacific_East[t+1]  1    0.992038
+         cyclone_dist_North_Sea  cyclone_slp_North_Pacific_East[t+2]  2    0.992034
+         cyclone_dist_North_Sea  cyclone_slp_North_Pacific_East[t+3]  3    0.992031
+         cyclone_dist_North_Sea  cyclone_slp_North_Pacific_East[t+4]  4    0.992028
+         cyclone_dist_North_Sea  cyclone_slp_North_Pacific_East[t+5]  5    0.992025
+         cyclone_dist_North_Sea  cyclone_slp_North_Pacific_East[t+6]  6    0.992021
+         cyclone_dist_North_Sea  cyclone_slp_North_Pacific_East[t+7]  7    0.992018
+ cyclone_slp_North_Pacific_East          cyclone_wind_North_Sea[t+1]  1    0.990404
+ cyclone_slp_North_Pacific_East           cyclone_slp_North_Sea[t+1]  1    0.990404
+ cyclone_slp_North_Pacific_East          cyclone_dist_North_Sea[t+1]  1    0.992038
+ cyclone_slp_North_Pacific_East cyclone_dist_North_Pacific_East[t+1]  1    0.995100
+ cyclone_slp_North_Pacific_East          cyclone_wind_North_Sea[t+2]  2    0.990400
+ cyclone_slp_North_Pacific_East           cyclone_slp_North_Sea[t+2]  2    0.990400
+ cyclone_slp_North_Pacific_East          cyclone_dist_North_Sea[t+2]  2    0.992034
+ cyclone_slp_North_Pacific_East cyclone_dist_North_Pacific_East[t+2]  2    0.995098
+ cyclone_slp_North_Pacific_East          cyclone_wind_North_Sea[t+3]  3    0.990396
+ cyclone_slp_North_Pacific_East           cyclone_slp_North_Sea[t+3]  3    0.990396
+ cyclone_slp_North_Pacific_East          cyclone_dist_North_Sea[t+3]  3    0.992031
+ cyclone_slp_North_Pacific_East cyclone_dist_North_Pacific_East[t+3]  3    0.995096
+ cyclone_slp_North_Pacific_East          cyclone_wind_North_Sea[t+4]  4    0.990392
+ cyclone_slp_North_Pacific_East           cyclone_slp_North_Sea[t+4]  4    0.990392
+ cyclone_slp_North_Pacific_East          cyclone_dist_North_Sea[t+4]  4    0.992028
+ cyclone_slp_North_Pacific_East cyclone_dist_North_Pacific_East[t+4]  4    0.995094
+ cyclone_slp_North_Pacific_East          cyclone_wind_North_Sea[t+5]  5    0.990389
+ cyclone_slp_North_Pacific_East           cyclone_slp_North_Sea[t+5]  5    0.990389
+ cyclone_slp_North_Pacific_East          cyclone_dist_North_Sea[t+5]  5    0.992025
+ cyclone_slp_North_Pacific_East cyclone_dist_North_Pacific_East[t+5]  5    0.995092
+ cyclone_slp_North_Pacific_East          cyclone_wind_North_Sea[t+6]  6    0.990385
+ cyclone_slp_North_Pacific_East           cyclone_slp_North_Sea[t+6]  6    0.990385
+ cyclone_slp_North_Pacific_East          cyclone_dist_North_Sea[t+6]  6    0.992021
+ cyclone_slp_North_Pacific_East cyclone_dist_North_Pacific_East[t+6]  6    0.995090
+ cyclone_slp_North_Pacific_East          cyclone_wind_North_Sea[t+7]  7    0.990381
+ cyclone_slp_North_Pacific_East           cyclone_slp_North_Sea[t+7]  7    0.990381
+ cyclone_slp_North_Pacific_East          cyclone_dist_North_Sea[t+7]  7    0.992018
+ cyclone_slp_North_Pacific_East cyclone_dist_North_Pacific_East[t+7]  7    0.995088
+          cyclone_slp_North_Sea  cyclone_slp_North_Pacific_East[t+1]  1    0.990404
+          cyclone_slp_North_Sea  cyclone_slp_North_Pacific_East[t+2]  2    0.990400
+          cyclone_slp_North_Sea  cyclone_slp_North_Pacific_East[t+3]  3    0.990396
+          cyclone_slp_North_Sea  cyclone_slp_North_Pacific_East[t+4]  4    0.990392
+          cyclone_slp_North_Sea  cyclone_slp_North_Pacific_East[t+5]  5    0.990389
+          cyclone_slp_North_Sea  cyclone_slp_North_Pacific_East[t+6]  6    0.990385
+          cyclone_slp_North_Sea  cyclone_slp_North_Pacific_East[t+7]  7    0.990381
+         cyclone_wind_North_Sea  cyclone_slp_North_Pacific_East[t+1]  1    0.990404
+         cyclone_wind_North_Sea  cyclone_slp_North_Pacific_East[t+2]  2    0.990400
+         cyclone_wind_North_Sea  cyclone_slp_North_Pacific_East[t+3]  3    0.990396
+         cyclone_wind_North_Sea  cyclone_slp_North_Pacific_East[t+4]  4    0.990392
+         cyclone_wind_North_Sea  cyclone_slp_North_Pacific_East[t+5]  5    0.990389
+         cyclone_wind_North_Sea  cyclone_slp_North_Pacific_East[t+6]  6    0.990385
+         cyclone_wind_North_Sea  cyclone_slp_North_Pacific_East[t+7]  7    0.990381
+
+--- TOP 15 |corr(feature(t), cumulative forward return t+1..t+h)| ---
+                      feature  horizon  corr_future_return    n
+                Price_Lag_30d       22           -0.178678 9592
+              air_Arabian_Sea       22            0.168132 5516
+            Wind_Speed_Lag30d       22           -0.164369 9516
+            Wind_Speed_Lag14d       22           -0.160430 9516
+            Wind_Speed_Lag30d       10           -0.138668 9516
+                 Price_Lag_7d       22           -0.137524 9684
+             Wind_Speed_Lag7d       22           -0.137345 9516
+                 Week_of_Year       22            0.131000 9712
+             Price_Zscore_30d       10            0.127844 9716
+                        Month       22            0.127578 9712
+             Price_Zscore_30d       22            0.126625 9668
+                Price_Lag_30d       10           -0.124044 9640
+          air_South_China_Sea       22            0.122293 9516
+             Price_Zscore_30d        7            0.117389 9728
+wind_speed_North_Pacific_West       22           -0.116529 4000
+
+[write] D:\testing\outputs\agentC_feature_future_corr.csv
+
+[summary] {
+  "n_forward_looking_columns_banned": 4,
+  "n_forward_looking_columns_in_use": 61,
+  "forward_looking_in_use": [
+    {
+      "feature": "Cyclone_Wind_Lag7d",
+      "equals": "Cyclone_Wind_Lag14d[t+7]",
+      "k": 7,
+      "frac_equal": 1.0
+    },
+    {
+      "feature": "Price_USD",
+      "equals": "Price_Lag_7d[t+7]",
+      "k": 7,
+      "frac_equal": 1.0
+    },
+    {
+      "feature": "Route_Max_cyclone_wind",
+      "equals": "Cyclone_Wind_Lag7d[t+7]",
+      "k": 7,
+      "frac_equal": 1.0
+    },
+    {
+      "feature": "Route_Mean_wind_speed",
+      "equals": "Wind_Speed_Lag7d[t+7]",
+      "k": 7,
+      "frac_equal": 1.0
+    },
+    {
+      "feature": "Wind_Speed_Lag7d",
+      "equals": "Wind_Speed_Lag14d[t+7]",
+      "k": 7,
+      "frac_equal": 1.0
+    },
+    {
+      "feature": "cyclone_dist_North_Pacific_East",
+      "equals": "cyclone_slp_North_Pacific_East[t+1]",
+      "k": 1,
+      "frac_equal": 0.9951
+    },
+    {
+      "feature": "cyclone_dist_North_Pacific_East",
+      "equals": "cyclone_slp_North_Pacific_East[t+2]",
+      "k": 2,
+      "frac_equal": 0.995098
+    },
+    {
+      "feature": "cyclone_dist_North_Pacific_East",
+      "equals": "cyclone_slp_North_Pacific_East[t+3]",
+      "k": 3,
+      "frac_equal": 0.995096
+    },
+    {
+      "feature": "cyclone_dist_North_Pacific_East",
+      "equals": "cyclone_slp_North_Pacific_East[t+4]",
+      "k": 4,
+      "frac_equal": 0.995094
+    },
+    {
+      "feature": "cyclone_dist_North_Pacific_East",
+      "equals": "cyclone_slp_North_Pacific_East[t+5]",
+      "k": 5,
+      "frac_equal": 0.995092
+    },
+    {
+      "feature": "cyclone_dist_North_Pacific_East",
+      "equals": "cyclone_slp_North_Pacific_East[t+6]",
+      "k": 6,
+      "frac_equal": 0.99509
+    },
+    {
+      "feature": "cyclone_dist_North_Pacific_East",
+      "equals": "cyclone_slp_North_Pacific_East[t+7]",
+      "k": 7,
+      "frac_equal": 0.995088
+    },
+    {
+      "feature": "cyclone_dist_North_Sea",
+      "equals": "cyclone_slp_North_Pacific_East[t+1]",
+      "k": 1,
+      "frac_equal": 0.992038
+    },
+    {
+      "feature": "cyclone_dist_North_Sea",
+      "equals": "cyclone_slp_North_Pacific_East[t+2]",
+      "k": 2,
+      "frac_equal": 0.992034
+    },
+    {
+      "feature": "cyclone_dist_North_Sea",
+      "equals": "cyclone_slp_North_Pacific_East[t+3]",
+      "k": 3,
+      "frac_equal": 0.992031
+    },
+    {
+      "feature": "cyclone_dist_North_Sea",
+      "equals": "cyclone_slp_North_Pacific_East[t+4]",
+      "k": 4,
+      "frac_equal": 0.992028
+    },
+    {
+      "feature": "cyclone_dist_North_Sea",
+      "equals": "cyclone_slp_North_Pacific_East[t+5]",
+      "k": 5,
+      "frac_equal": 0.992025
+    },
+    {
+      "feature": "cyclone_dist_North_Sea",
+      "equals": "cyclone_slp_North_Pacific_East[t+6]",
+      "k": 6,
+      "frac_equal": 0.992021
+    },
+    {
+      "feature": "cyclone_dist_North_Sea",
+      "equals": "cyclone_slp_North_Pacific_East[t+7]",
+      "k": 7,
+      "frac_equal": 0.992018
+    },
+    {
+      "feature": "cyclone_slp_North_Pacific_East",
+      "equals": "cyclone_wind_North_Sea[t+1]",
+      "k": 1,
+      "frac_equal": 0.990404
+    },
+    {
+      "feature": "cyclone_slp_North_Pacific_East",
+      "equals": "cyclone_slp_North_Sea[t+1]",
+      "k": 1,
+      "frac_equal": 0.990404
+    },
+    {
+      "feature": "cyclone_slp_North_Pacific_East",
+      "equals": "cyclone_dist_North_Sea[t+1]",
+      "k": 1,
+      "frac_equal": 0.992038
+    },
+    {
+      "feature": "cyclone_slp_North_Pacific_East",
+      "equals": "cyclone_dist_North_Pacific_East[t+1]",
+      "k": 1,
+      "frac_equal": 0.9951
+    },
+    {
+      "feature": "cyclone_slp_North_Pacific_East",
+      "equals": "cyclone_wind_North_Sea[t+2]",
+      "k": 2,
+      "frac_equal": 0.9904
+    },
+    {
+      "feature": "cyclone_slp_North_Pacific_East",
+      "equals": "cyclone_slp_North_Sea[t+2]",
+      "k": 2,
+      "frac_equal": 0.9904
+    },
+    {
+      "feature": "cyclone_slp_North_Pacific_East",
+      "equals": "cyclone_dist_North_Sea[t+2]",
+      "k": 2,
+      "frac_equal": 0.992034
+    },
+    {
+      "feature": "cyclone_slp_North_Pacific_East",
+      "equals": "cyclone_dist_North_Pacific_East[t+2]",
+      "k": 2,
+      "frac_equal": 0.995098
+    },
+    {
+      "feature": "cyclone_slp_North_Pacific_East",
+      "equals": "cyclone_wind_North_Sea[t+3]",
+      "k": 3,
+      "frac_equal": 0.990396
+    },
+    {
+      "feature": "cyclone_slp_North_Pacific_East",
+      "equals": "cyclone_slp_North_Sea[t+3]",
+      "k": 3,
+      "frac_equal": 0.990396
+    },
+    {
+      "feature": "cyclone_slp_North_Pacific_East",
+      "equals": "cyclone_dist_North_Sea[t+3]",
+      "k": 3,
+      "frac_equal": 0.992031
+    },
+    {
+      "feature": "cyclone_slp_North_Pacific_East",
+      "equals": "cyclone_dist_North_Pacific_East[t+3]",
+      "k": 3,
+      "frac_equal": 0.995096
+    },
+    {
+      "feature": "cyclone_slp_North_Pacific_East",
+      "equals": "cyclone_wind_North_Sea[t+4]",
+      "k": 4,
+      "frac_equal": 0.990392
+    },
+    {
+      "feature": "cyclone_slp_North_Pacific_East",
+      "equals": "cyclone_slp_North_Sea[t+4]",
+      "k": 4,
+      "frac_equal": 0.990392
+    },
+    {
+      "feature": "cyclone_slp_North_Pacific_East",
+      "equals": "cyclone_dist_North_Sea[t+4]",
+      "k": 4,
+      "frac_equal": 0.992028
+    },
+    {
+      "feature": "cyclone_slp_North_Pacific_East",
+      "equals": "cyclone_dist_North_Pacific_East[t+4]",
+      "k": 4,
+      "frac_equal": 0.995094
+    },
+    {
+      "feature": "cyclone_slp_North_Pacific_East",
+      "equals": "cyclone_wind_North_Sea[t+5]",
+      "k": 5,
+      "frac_equal": 0.990389
+    },
+    {
+      "feature": "cyclone_slp_North_Pacific_East",
+      "equals": "cyclone_slp_North_Sea[t+5]",
+      "k": 5,
+      "frac_equal": 0.990389
+    },
+    {
+      "feature": "cyclone_slp_North_Pacific_East",
+      "equals": "cyclone_dist_North_Sea[t+5]",
+      "k": 5,
+      "frac_equal": 0.992025
+    },
+    {
+      "feature": "cyclone_slp_North_Pacific_East",
+      "equals": "cyclone_dist_North_Pacific_East[t+5]",
+      "k": 5,
+      "frac_equal": 0.995092
+    },
+    {
+      "feature": "cyclone_slp_North_Pacific_East",
+      "equals": "cyclone_wind_North_Sea[t+6]",
+      "k": 6,
+      "frac_equal": 0.990385
+    },
+    {
+      "feature": "cyclone_slp_North_Pacific_East",
+      "equals": "cyclone_slp_North_Sea[t+6]",
+      "k": 6,
+      "frac_equal": 0.990385
+    },
+    {
+      "feature": "cyclone_slp_North_Pacific_East",
+      "equals": "cyclone_dist_North_Sea[t+6]",
+      "k": 6,
+      "frac_equal": 0.992021
+    },
+    {
+      "feature": "cyclone_slp_North_Pacific_East",
+      "equals": "cyclone_dist_North_Pacific_East[t+6]",
+      "k": 6,
+      "frac_equal": 0.99509
+    },
+    {
+      "feature": "cyclone_slp_North_Pacific_East",
+      "equals": "cyclone_wind_North_Sea[t+7]",
+      "k": 7,
+      "frac_equal": 0.990381
+    },
+    {
+      "feature": "cyclone_slp_North_Pacific_East",
+      "equals": "cyclone_slp_North_Sea[t+7]",
+      "k": 7,
+      "frac_equal": 0.990381
+    },
+    {
+      "feature": "cyclone_slp_North_Pacific_East",
+      "equals": "cyclone_dist_North_Sea[t+7]",
+      "k": 7,
+      "frac_equal": 0.992018
+    },
+    {
+      "feature": "cyclone_slp_North_Pacific_East",
+      "equals": "cyclone_dist_North_Pacific_East[t+7]",
+      "k": 7,
+      "frac_equal": 0.995088
+    },
+    {
+      "feature": "cyclone_slp_North_Sea",
+      "equals": "cyclone_slp_North_Pacific_East[t+1]",
+      "k": 1,
+      "frac_equal": 0.990404
+    },
+    {
+      "feature": "cyclone_slp_North_Sea",
+      "equals": "cyclone_slp_North_Pacific_East[t+2]",
+      "k": 2,
+      "frac_equal": 0.9904
+    },
+    {
+      "feature": "cyclone_slp_North_Sea",
+      "equals": "cyclone_slp_North_Pacific_East[t+3]",
+      "k": 3,
+      "frac_equal": 0.990396
+    },
+    {
+      "feature": "cyclone_slp_North_Sea",
+      "equals": "cyclone_slp_North_Pacific_East[t+4]",
+      "k": 4,
+      "frac_equal": 0.990392
+    },
+    {
+      "feature": "cyclone_slp_North_Sea",
+      "equals": "cyclone_slp_North_Pacific_East[t+5]",
+      "k": 5,
+      "frac_equal": 0.990389
+    },
+    {
+      "feature": "cyclone_slp_North_Sea",
+      "equals": "cyclone_slp_North_Pacific_East[t+6]",
+      "k": 6,
+      "frac_equal": 0.990385
+    },
+    {
+      "feature": "cyclone_slp_North_Sea",
+      "equals": "cyclone_slp_North_Pacific_East[t+7]",
+      "k": 7,
+      "frac_equal": 0.990381
+    },
+    {
+      "feature": "cyclone_wind_North_Sea",
+      "equals": "cyclone_slp_North_Pacific_East[t+1]",
+      "k": 1,
+      "frac_equal": 0.990404
+    },
+    {
+      "feature": "cyclone_wind_North_Sea",
+      "equals": "cyclone_slp_North_Pacific_East[t+2]",
+      "k": 2,
+      "frac_equal": 0.9904
+    },
+    {
+      "feature": "cyclone_wind_North_Sea",
+      "equals": "cyclone_slp_North_Pacific_East[t+3]",
+      "k": 3,
+      "frac_equal": 0.990396
+    },
+    {
+      "feature": "cyclone_wind_North_Sea",
+      "equals": "cyclone_slp_North_Pacific_East[t+4]",
+      "k": 4,
+      "frac_equal": 0.990392
+    },
+    {
+      "feature": "cyclone_wind_North_Sea",
+      "equals": "cyclone_slp_North_Pacific_East[t+5]",
+      "k": 5,
+      "frac_equal": 0.990389
+    },
+    {
+      "feature": "cyclone_wind_North_Sea",
+      "equals": "cyclone_slp_North_Pacific_East[t+6]",
+      "k": 6,
+      "frac_equal": 0.990385
+    },
+    {
+      "feature": "cyclone_wind_North_Sea",
+      "equals": "cyclone_slp_North_Pacific_East[t+7]",
+      "k": 7,
+      "frac_equal": 0.990381
+    }
+  ],
+  "forward_looking_banned": [
+    {
+      "feature": "Cyclone_Wind_Forecast3d",
+      "equals": "Route_Max_cyclone_wind[t+3]",
+      "k": 3,
+      "frac_equal": 1.0
+    },
+    {
+      "feature": "Cyclone_Wind_Forecast7d",
+      "equals": "Cyclone_Wind_Forecast3d[t+4]",
+      "k": 4,
+      "frac_equal": 1.0
+    },
+    {
+      "feature": "Cyclone_Wind_Forecast7d",
+      "equals": "Route_Max_cyclone_wind[t+7]",
+      "k": 7,
+      "frac_equal": 1.0
+    },
+    {
+      "feature": "Wind_Speed_Forecast7d",
+      "equals": "Route_Mean_wind_speed[t+7]",
+      "k": 7,
+      "frac_equal": 1.0
+    }
+  ]
+}

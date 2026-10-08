@@ -1,0 +1,27 @@
+[dup] XSICFENE_FarEast_NorthEurope
+      XSICNEFE_NorthEurope_FarEast
+      rows 2829 vs 2829, common dates 2829
+      columns byte-identical on common dates: 99/102
+      differing columns: {'Origin_LSCI': 2758, 'Dest_LSCI': 2758, 'Congestion_Risk': 1218}
+[dup] XSICFEUW_FarEast_USWestCoast
+      XSICUWFE_USWestCoast_FarEast
+      rows 2071 vs 2071, common dates 2071
+      columns byte-identical on common dates: 99/102
+      differing columns: {'Origin_LSCI': 2000, 'Dest_LSCI': 2000, 'Congestion_Risk': 379}
+
+--- EFFECTIVE SAMPLE SIZE ---
+route_pair  n_obs  n_unique_dates  n_duplicated_rows  lag1_autocorr_log_rv_fwd  n_effective
+    FE-NEU   5648            2824               2824                    0.7363        857.7
+    FE-USW   4132            2066               2066                    0.7691        539.2
+
+--- SUMMARY ---
+  total_modelling_rows: 9780
+  n_routes: 4
+  n_independent_directional_lanes: 2
+  n_duplicated_rows: 6956
+  duplication_ratio: 3.4632
+  n_unique_route_dates: 2824
+  n_effective_independent_obs_after_lag1: 1396.9
+  target_window_overlap_factor: 5
+
+[write] D:\testing\outputs\agentC_duplicate_routes.json

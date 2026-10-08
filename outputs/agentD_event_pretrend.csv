@@ -1,0 +1,5 @@
+event,pre_trend_mean_diff,offset0_diff,post_mean_diff
+cyc_active,-0.05821,-0.10532,-0.01932
+cyc_wind_ge64kt,-0.1263,-0.11282,-0.05351
+slp_anom_lt_p10,0.06327,0.00983,-0.08212
+wind_gt_p90,0.03661,-0.06433,0.04134

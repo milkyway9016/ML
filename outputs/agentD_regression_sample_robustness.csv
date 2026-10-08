@@ -1,0 +1,7 @@
+sample,model,n,R2,adj_R2
+duplicated-4-rows,M0_trail_only,9752,0.12653,0.87342
+duplicated-4-rows,M1_trail+shocks,9752,0.12675,0.87312
+duplicated-4-rows,M3_trail+shocks+continuous,9752,0.13886,0.86089
+dedup-2-lanes,M0_trail_only,4876,0.12653,0.87342
+dedup-2-lanes,M1_trail+shocks,4876,0.12675,0.87304
+dedup-2-lanes,M3_trail+shocks+continuous,4876,0.13886,0.86071

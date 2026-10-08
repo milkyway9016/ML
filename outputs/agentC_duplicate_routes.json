@@ -1,0 +1,58 @@
+{
+  "pairs": [
+    {
+      "route_a": "XSICFENE_FarEast_NorthEurope",
+      "route_b": "XSICNEFE_NorthEurope_FarEast",
+      "n_a": 2829,
+      "n_b": 2829,
+      "n_common_dates": 2829,
+      "columns_identical_on_common_dates": 99,
+      "columns_differing": {
+        "Origin_LSCI": 2758,
+        "Dest_LSCI": 2758,
+        "Congestion_Risk": 1218
+      }
+    },
+    {
+      "route_a": "XSICFEUW_FarEast_USWestCoast",
+      "route_b": "XSICUWFE_USWestCoast_FarEast",
+      "n_a": 2071,
+      "n_b": 2071,
+      "n_common_dates": 2071,
+      "columns_identical_on_common_dates": 99,
+      "columns_differing": {
+        "Origin_LSCI": 2000,
+        "Dest_LSCI": 2000,
+        "Congestion_Risk": 379
+      }
+    }
+  ],
+  "effective_sample": {
+    "total_modelling_rows": 9780,
+    "n_routes": 4,
+    "n_independent_directional_lanes": 2,
+    "n_duplicated_rows": 6956,
+    "duplication_ratio": 3.4632,
+    "n_unique_route_dates": 2824,
+    "n_effective_independent_obs_after_lag1": 1396.9,
+    "target_window_overlap_factor": 5
+  },
+  "per_pair": [
+    {
+      "route_pair": "FE-NEU",
+      "n_obs": 5648,
+      "n_unique_dates": 2824,
+      "n_duplicated_rows": 2824,
+      "lag1_autocorr_log_rv_fwd": 0.7363,
+      "n_effective": 857.7
+    },
+    {
+      "route_pair": "FE-USW",
+      "n_obs": 4132,
+      "n_unique_dates": 2066,
+      "n_duplicated_rows": 2066,
+      "lag1_autocorr_log_rv_fwd": 0.7691,
+      "n_effective": 539.2
+    }
+  ]
+}

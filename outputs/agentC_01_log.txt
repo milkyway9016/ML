@@ -1,0 +1,16 @@
+==========================================================================================
+1. INDEPENDENT TARGET RE-DERIVATION
+==========================================================================================
+[target] rows=9800  NaN-pattern mismatches=0  value mismatches>1e-9=0
+[target] random 200-row sample: NaN-pattern mismatches=0, value mismatches>1e-9=0
+[target] exactly-zero rv_fwd rows=66  rows<=floor(0.0005)=66
+[target] zero rows by route/year: {'XSICFENE_FarEast_NorthEurope|2015': 1, 'XSICFEUW_FarEast_USWestCoast|2018': 25, 'XSICFEUW_FarEast_USWestCoast|2019': 3, 'XSICFEUW_FarEast_USWestCoast|2020': 1, 'XSICFEUW_FarEast_USWestCoast|2021': 1, 'XSICFEUW_FarEast_USWestCoast|2026': 2, 'XSICNEFE_NorthEurope_FarEast|2015': 1, 'XSICUWFE_USWestCoast_FarEast|2018': 25, 'XSICUWFE_USWestCoast_FarEast|2019': 3, 'XSICUWFE_USWestCoast_FarEast|2020': 1, 'XSICUWFE_USWestCoast_FarEast|2021': 1, 'XSICUWFE_USWestCoast_FarEast|2026': 2}
+[target] fingerprint: sq_ret(1400) -> 1e6 moves rv_fwd at relative positions [-5, -4, -3, -2, -1] (expected [-5, -4, -3, -2, -1]); own row moved = False
+[target] ISOLATED bulk test: changed sq_ret(t) at 400 rows spaced >5 apart; of the 400 with a finite target, rv_fwd(t) moved for 0 (must be 0)
+[target] (for reference, a dense 400-row perturbation gives a spurious non-zero count only because other perturbed rows fall inside the same window)
+[target] single-route dense test: 212 rows appear to change, all of them because another perturbed row lies inside their target window (verified: True)
+[target] power check: moving sq_ret at row 16 moves rv_fwd(15) = True (must be True)
+[target] ret-preserving price perturbation at 300 rows changed rv_fwd for 1887 rows (must be 0 - scaling Price(t) and Price(t+1) together is a no-op on returns)
+[write] D:\testing\outputs\agentC_target_audit.json
+
+==========================================================================================
